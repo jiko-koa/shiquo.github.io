@@ -2,2039 +2,457 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shiquo Hii Style | Shop Everything</title>
 
-<title>Shiquo Hii Style | Nairobi Online Shop</title>
-
-<meta name="description" content="Shiquo Hii Style is a premium Nairobi online shop for fashion, electronics, cookware, furniture, beauty, accessories, home essentials and more.">
-
-<meta name="theme-color" content="#101914">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="Shiquo Hii Style - Fashion, electronics, cookware, furniture and more in Nairobi, Kenya.">
+<meta name="theme-color" content="#ff006e">
 
 <style>
-
-:root{
---black:#0d1411;
---dark:#101914;
---dark2:#16221c;
---green:#0d6b4c;
---green2:#14966b;
---gold:#d7b56d;
---gold2:#f0d596;
---sand:#d9c7a2;
---cream:#eee4d0;
---plum:#392238;
---orange:#c8753c;
---text:#f4eee3;
---muted:#b7b0a4;
---card:#18241e;
---border:rgba(240,213,150,.16);
---shadow:0 20px 55px rgba(0,0,0,.28);
-}
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-font-family:'DM Sans',sans-serif;
-background:
-radial-gradient(circle at 15% 5%,rgba(13,107,76,.18),transparent 28%),
-radial-gradient(circle at 90% 30%,rgba(57,34,56,.25),transparent 30%),
-var(--black);
-color:var(--text);
+ font-family:Arial,Helvetica,sans-serif;
+ background:
+ radial-gradient(circle at 10% 10%,#50107a 0,transparent 30%),
+ radial-gradient(circle at 90% 20%,#8b004f 0,transparent 28%),
+ #090817;
+ color:#fff;
+}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:0}
+
+.top{
+ background:linear-gradient(90deg,#ff006e,#ff8a00,#ffd000);
+ color:#111;text-align:center;padding:9px;font-weight:900;font-size:13px;
 }
 
-body:before{
-content:"";
-position:fixed;
-inset:0;
-pointer-events:none;
-background-image:
-linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),
-linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);
-background-size:45px 45px;
-z-index:-1;
+nav{
+ display:flex;align-items:center;gap:20px;padding:16px 5%;
+ background:#0d0b1b;
+ position:sticky;top:0;z-index:50;
+ border-bottom:1px solid #3d214d;
 }
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-button{
-font-family:inherit;
-cursor:pointer;
-border:0;
-}
-
-/* TOP STRIP */
-
-.topbar{
-background:
-linear-gradient(90deg,#0d6b4c,#16221c,#392238);
-border-bottom:1px solid var(--border);
-text-align:center;
-padding:9px 15px;
-font-size:12px;
-font-weight:700;
-letter-spacing:.4px;
-color:var(--gold2);
-}
-
-/* NAVIGATION */
-
-header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(13,20,17,.94);
-backdrop-filter:blur(18px);
-border-bottom:1px solid var(--border);
-}
-
-.nav{
-max-width:1300px;
-margin:auto;
-padding:17px 20px;
-display:flex;
-align-items:center;
-gap:25px;
-}
-
-.logo{
-font-family:'Playfair Display',serif;
-font-size:27px;
-font-weight:800;
-white-space:nowrap;
-letter-spacing:-.5px;
-}
-
-.logo span{
-color:var(--gold);
-}
-
-.logo small{
-display:block;
-font-family:'DM Sans',sans-serif;
-font-size:8px;
-letter-spacing:3px;
-color:var(--muted);
-font-weight:600;
-margin-top:-2px;
-}
-
+.logo{font-size:23px;font-weight:1000;line-height:.9}
+.logo span{color:#ffd000}
 .search{
-flex:1;
-height:46px;
-display:flex;
-background:#1b2821;
-border:1px solid var(--border);
-border-radius:50px;
-overflow:hidden;
+ flex:1;display:flex;background:#242031;border-radius:30px;overflow:hidden;
 }
-
 .search input{
-flex:1;
-border:0;
-outline:0;
-background:transparent;
-color:white;
-padding:0 20px;
-font-size:14px;
+ flex:1;background:none;border:0;outline:0;color:white;padding:14px 20px;font-size:15px;
 }
-
-.search input::placeholder{
-color:#928c82;
+.search button{background:#ff006e;color:white;padding:0 22px;font-size:20px}
+.navcart{
+ background:#ffd000;color:#111;padding:12px 18px;border-radius:25px;font-weight:900;
 }
-
-.search button{
-width:58px;
-background:var(--gold);
-color:#172019;
-font-size:20px;
-}
-
-.nav-actions{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.nav-btn{
-background:transparent;
-color:var(--cream);
-font-weight:700;
-}
-
-.cart-btn{
-background:linear-gradient(135deg,var(--gold),var(--gold2));
-color:#152019;
-padding:11px 17px;
-border-radius:30px;
-font-weight:800;
-}
-
-.cart-count{
-background:#0d6b4c;
-color:white;
-border-radius:50%;
-padding:2px 7px;
-font-size:11px;
-}
-
-/* HERO */
 
 .hero{
-position:relative;
-min-height:650px;
-overflow:hidden;
-display:flex;
-align-items:center;
-background:
-linear-gradient(90deg,
-rgba(9,16,13,.98) 0%,
-rgba(9,16,13,.84) 42%,
-rgba(9,16,13,.40) 100%),
-radial-gradient(circle at 80% 45%,#1d7257,#101914 45%,#0b110e);
+ padding:35px 5% 25px;
+ min-height:450px;
+ display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;
+ background:
+ linear-gradient(90deg,rgba(8,6,20,.96),rgba(8,6,20,.5)),
+ url("hero.jpg") center/cover;
+}
+.hero h1{font-size:clamp(48px,8vw,100px);line-height:.85;font-weight:1000}
+.hero h1 span{color:#ffd000}
+.hero p{font-size:20px;font-weight:700;margin:22px 0;color:#eee}
+.shopbtn{
+ display:inline-block;background:linear-gradient(90deg,#ffd000,#ff7a00);
+ color:#111;padding:16px 30px;border-radius:12px;font-weight:1000;font-size:17px;
+ box-shadow:0 8px 30px #ff7a0060;
 }
 
-.hero:after{
-content:"";
-position:absolute;
-right:-180px;
-top:-180px;
-width:620px;
-height:620px;
-border-radius:50%;
-border:1px solid rgba(215,181,109,.18);
-box-shadow:
-0 0 0 55px rgba(215,181,109,.025),
-0 0 0 110px rgba(215,181,109,.02);
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badge{
+ background:#ffffff12;border:1px solid #ffffff25;padding:10px 13px;border-radius:10px;
+ font-size:12px;font-weight:800;
 }
 
-.hero-content{
-position:relative;
-z-index:2;
-max-width:1300px;
-width:100%;
-margin:auto;
-padding:90px 20px;
+.section{padding:30px 5%}
+.title{
+ font-size:clamp(27px,5vw,42px);
+ font-weight:1000;
+ margin-bottom:20px;
+ text-transform:uppercase;
 }
+.title span{color:#ffd000}
 
-.eyebrow{
-display:inline-flex;
-align-items:center;
-gap:8px;
-border:1px solid var(--border);
-background:rgba(255,255,255,.035);
-padding:9px 15px;
-border-radius:30px;
-font-size:11px;
-font-weight:800;
-letter-spacing:1.2px;
-color:var(--gold2);
+.deals{
+ display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
 }
-
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:clamp(48px,7vw,88px);
-line-height:.98;
-max-width:850px;
-margin:24px 0;
-letter-spacing:-2px;
+.deal{
+ padding:22px;border-radius:15px;font-size:19px;font-weight:1000;
+ background:linear-gradient(135deg,#ff006e,#8e24aa);
 }
-
-.hero h1 span{
-color:var(--gold);
-}
-
-.hero p{
-max-width:650px;
-color:#c8c0b3;
-font-size:17px;
-line-height:1.8;
-margin-bottom:30px;
-}
-
-.hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-}
-
-.btn-primary{
-background:linear-gradient(135deg,var(--gold),var(--gold2));
-color:#101914;
-padding:15px 25px;
-border-radius:35px;
-font-weight:900;
-}
-
-.btn-outline{
-border:1px solid rgba(240,213,150,.35);
-background:rgba(255,255,255,.035);
-color:var(--cream);
-padding:15px 25px;
-border-radius:35px;
-font-weight:800;
-}
-
-.btn-primary:hover,
-.btn-outline:hover{
-transform:translateY(-2px);
-}
-
-/* FLOATING HERO STATS */
-
-.hero-stats{
-display:flex;
-gap:35px;
-margin-top:45px;
-flex-wrap:wrap;
-}
-
-.stat strong{
-display:block;
-font-family:'Playfair Display',serif;
-font-size:24px;
-color:var(--gold2);
-}
-
-.stat span{
-font-size:11px;
-color:var(--muted);
-}
-
-/* SECTIONS */
-
-.section{
-max-width:1300px;
-margin:auto;
-padding:80px 20px;
-}
-
-.heading{
-display:flex;
-justify-content:space-between;
-align-items:end;
-gap:20px;
-margin-bottom:30px;
-}
-
-.heading h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
-}
-
-.heading p{
-color:var(--muted);
-font-size:13px;
-margin-top:7px;
-}
-
-/* CATEGORY GRID */
+.deal:nth-child(2){background:linear-gradient(135deg,#ff7a00,#ff006e)}
+.deal:nth-child(3){background:linear-gradient(135deg,#6a00ff,#0099ff)}
+.deal:nth-child(4){background:linear-gradient(135deg,#00a86b,#00695c)}
 
 .categories{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:15px;
+ display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;
 }
-
-.category{
-position:relative;
-overflow:hidden;
-min-height:175px;
-border-radius:20px;
-padding:21px;
-display:flex;
-flex-direction:column;
-justify-content:end;
-border:1px solid var(--border);
-box-shadow:var(--shadow);
-transition:.35s;
+.cat{
+ min-width:125px;text-align:center;background:#171324;padding:12px;border-radius:18px;
+ border:1px solid #3b2549;transition:.25s;
 }
-
-.category:hover{
-transform:translateY(-7px);
-border-color:rgba(240,213,150,.4);
+.cat:hover{transform:translateY(-5px);border-color:#ff006e}
+.cat img{
+ width:85px;height:85px;border-radius:50%;object-fit:cover;
+ border:3px solid #ff006e;
 }
-
-.category:before{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.65));
-}
-
-.category>*{
-position:relative;
-z-index:2;
-}
-
-.category-icon{
-font-size:35px;
-margin-bottom:auto;
-}
-
-.category h3{
-font-size:17px;
-}
-
-.category p{
-font-size:11px;
-color:#d0c8bc;
-margin-top:4px;
-}
-
-.cat-fashion{
-background:linear-gradient(135deg,#533c55,#251c28);
-}
-
-.cat-men{
-background:linear-gradient(135deg,#1f4e43,#14241e);
-}
-
-.cat-electronics{
-background:linear-gradient(135deg,#243e54,#111d25);
-}
-
-.cat-kitchen{
-background:linear-gradient(135deg,#66482e,#271d16);
-}
-
-.cat-furniture{
-background:linear-gradient(135deg,#574631,#251f19);
-}
-
-.cat-beauty{
-background:linear-gradient(135deg,#603e50,#281b24);
-}
-
-.cat-home{
-background:linear-gradient(135deg,#375348,#18261f);
-}
-
-.cat-kids{
-background:linear-gradient(135deg,#514f2c,#242317);
-}
-
-.cat-accessories{
-background:linear-gradient(135deg,#443e55,#211d29);
-}
-
-.cat-appliances{
-background:linear-gradient(135deg,#354d56,#172227);
-}
-
-/* FEATURED PRODUCTS */
+.cat b{display:block;margin-top:8px;font-size:13px}
 
 .products{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+ display:grid;grid-template-columns:repeat(4,1fr);gap:17px;
 }
-
-.product{
-background:
-linear-gradient(145deg,#1a2821,#111b16);
-border:1px solid var(--border);
-border-radius:20px;
-overflow:hidden;
-box-shadow:var(--shadow);
-transition:.35s;
+.card{
+ background:#151221;border:1px solid #30243d;border-radius:18px;overflow:hidden;
+ transition:.25s;box-shadow:0 8px 25px #0005;
 }
-
-.product:hover{
-transform:translateY(-6px);
-border-color:rgba(215,181,109,.38);
+.card:hover{transform:translateY(-7px);border-color:#ff006e}
+.pic{height:220px;position:relative;background:#24202f}
+.pic img{width:100%;height:100%;object-fit:cover}
+.tag{
+ position:absolute;top:10px;left:10px;background:#ff006e;
+ padding:6px 9px;border-radius:7px;font-size:11px;font-weight:1000;
 }
-
-.product-image{
-height:240px;
-position:relative;
-overflow:hidden;
-background:#1c2822;
+.info{padding:14px}
+.info h3{font-size:16px;margin-bottom:8px}
+.price{color:#ffd000;font-size:20px;font-weight:1000}
+.old{text-decoration:line-through;color:#888;font-size:12px;margin-left:5px}
+.stars{color:#ffd000;margin:7px 0;font-size:13px}
+.actions{display:flex;gap:8px}
+.add,.view{
+ flex:1;padding:11px;border-radius:9px;font-weight:900;
 }
+.add{background:#ff006e;color:white}
+.view{background:#292334;color:white}
 
-.product-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.5s;
+.banner{
+ margin-top:25px;padding:30px;border-radius:20px;
+ background:linear-gradient(110deg,#7b00ff,#ff006e,#ff7a00);
+ text-align:center;
 }
-
-.product:hover img{
-transform:scale(1.06);
-}
-
-.badge{
-position:absolute;
-top:13px;
-left:13px;
-background:var(--gold);
-color:#172019;
-font-size:10px;
-font-weight:900;
-padding:6px 10px;
-border-radius:20px;
-}
-
-.product-info{
-padding:18px;
-}
-
-.category-name{
-color:var(--gold);
-font-size:10px;
-text-transform:uppercase;
-letter-spacing:1px;
-font-weight:800;
-}
-
-.product h3{
-font-size:16px;
-margin:8px 0;
-}
-
-.product-desc{
-font-size:12px;
-color:var(--muted);
-margin-bottom:13px;
-}
-
-.price{
-font-size:20px;
-font-weight:900;
-color:var(--cream);
-}
-
-.add{
-width:100%;
-margin-top:14px;
-padding:11px;
-border-radius:11px;
-background:#21352b;
-border:1px solid var(--border);
-color:var(--gold2);
-font-weight:800;
-}
-
-.add:hover{
-background:var(--green);
-color:white;
-}
-
-/* PROMO */
-
-.promo{
-max-width:1260px;
-margin:0 auto 70px;
-padding:55px;
-border-radius:28px;
-position:relative;
-overflow:hidden;
-background:
-radial-gradient(circle at 85% 20%,rgba(215,181,109,.25),transparent 25%),
-linear-gradient(120deg,#0d6b4c,#173b2e 55%,#392238);
-border:1px solid var(--border);
-box-shadow:var(--shadow);
-}
-
-.promo h2{
-font-family:'Playfair Display',serif;
-font-size:42px;
-}
-
-.promo p{
-max-width:650px;
-color:#d2cec3;
-line-height:1.8;
-margin:12px 0 25px;
-}
-
-/* FEATURES */
+.banner h2{font-size:clamp(30px,6vw,55px);font-weight:1000}
+.banner button{margin-top:14px;background:#ffd000;padding:13px 25px;border-radius:9px;font-weight:1000}
 
 .features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:17px;
+ display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px;
 }
-
 .feature{
-background:#17231d;
-border:1px solid var(--border);
-border-radius:19px;
-padding:25px;
-transition:.3s;
+ background:#151221;border:1px solid #30243d;padding:18px;text-align:center;border-radius:14px;
 }
-
-.feature:hover{
-transform:translateY(-5px);
-}
-
-.feature-icon{
-font-size:29px;
-margin-bottom:13px;
-}
-
-.feature h3{
-font-size:16px;
-margin-bottom:8px;
-}
-
-.feature p{
-font-size:12px;
-color:var(--muted);
-line-height:1.7;
-}
-
-/* ABOUT */
-
-.about{
-background:
-radial-gradient(circle at 10% 30%,rgba(13,107,76,.28),transparent 30%),
-#111a15;
-border-top:1px solid var(--border);
-border-bottom:1px solid var(--border);
-}
-
-.about-inner{
-max-width:1300px;
-margin:auto;
-padding:85px 20px;
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:70px;
-}
-
-.about h2{
-font-family:'Playfair Display',serif;
-font-size:45px;
-margin-bottom:20px;
-}
-
-.about p{
-color:#bbb5aa;
-line-height:1.9;
-font-size:14px;
-}
-
-.about-card{
-background:
-linear-gradient(145deg,rgba(215,181,109,.12),rgba(13,107,76,.22));
-border:1px solid var(--border);
-padding:35px;
-border-radius:25px;
-align-self:center;
-}
-
-.about-card .brand{
-font-family:'Playfair Display',serif;
-font-size:30px;
-color:var(--gold2);
-}
-
-.about-card hr{
-border:0;
-border-top:1px solid var(--border);
-margin:22px 0;
-}
-
-/* NEWSLETTER */
-
-.newsletter{
-text-align:center;
-padding:80px 20px;
-}
-
-.newsletter h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
-}
-
-.newsletter p{
-color:var(--muted);
-margin:10px 0 25px;
-}
-
-.newsletter-form{
-max-width:520px;
-margin:auto;
-height:52px;
-display:flex;
-background:#18241e;
-border:1px solid var(--border);
-border-radius:40px;
-padding:5px;
-}
-
-.newsletter-form input{
-flex:1;
-border:0;
-outline:0;
-background:transparent;
-color:white;
-padding:0 18px;
-}
-
-.newsletter-form button{
-background:var(--gold);
-color:#101914;
-padding:0 22px;
-border-radius:30px;
-font-weight:900;
-}
-
-/* FOOTER */
+.feature strong{display:block;margin-top:7px}
 
 footer{
-background:#090e0b;
-border-top:1px solid var(--border);
+ margin-top:30px;background:#070610;padding:40px 5% 80px;
+ border-top:1px solid #30243d;
+}
+.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+footer h3{color:#ffd000;margin-bottom:12px}
+footer p,footer a{display:block;color:#aaa;margin:7px 0;font-size:14px}
+
+.float{
+ position:fixed;right:18px;bottom:18px;z-index:80;
+ background:#25d366;color:white;border-radius:50px;padding:15px 20px;font-weight:1000;
+ box-shadow:0 8px 30px #0008;
 }
 
-.footer-inner{
-max-width:1300px;
-margin:auto;
-padding:60px 20px 30px;
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1fr;
-gap:45px;
+/* POPUP */
+.modal{
+ display:none;position:fixed;inset:0;background:#000b;z-index:100;
+ align-items:center;justify-content:center;padding:20px;
 }
-
-.footer-logo{
-font-family:'Playfair Display',serif;
-font-size:28px;
+.modalbox{
+ width:min(500px,100%);background:#151221;border:2px solid #ff006e;
+ border-radius:22px;overflow:hidden;position:relative;
 }
-
-.footer-logo span{
-color:var(--gold);
-}
-
-.footer p{
-color:#878e88;
-font-size:12px;
-line-height:1.8;
-margin-top:12px;
-}
-
-.footer h3{
-color:var(--cream);
-margin-bottom:16px;
-font-size:15px;
-}
-
-.footer a{
-display:block;
-color:#858c86;
-font-size:12px;
-margin:11px 0;
-}
-
-.footer a:hover{
-color:var(--gold2);
-}
-
-.copyright{
-border-top:1px solid rgba(255,255,255,.06);
-padding:20px;
-text-align:center;
-color:#626963;
-font-size:11px;
-}
-
-/* CART */
-
-.cart-overlay{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.75);
-z-index:3000;
-}
-
-.cart{
-position:absolute;
-right:0;
-top:0;
-height:100%;
-width:min(430px,100%);
-background:#111b16;
-border-left:1px solid var(--border);
-padding:25px;
-display:flex;
-flex-direction:column;
-}
-
-.cart-head{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding-bottom:18px;
-border-bottom:1px solid var(--border);
-}
-
-.cart-head h2{
-font-family:'Playfair Display',serif;
-}
-
+.modalbox img{width:100%;height:300px;object-fit:cover}
 .close{
-background:transparent;
-color:var(--cream);
-font-size:28px;
+ position:absolute;right:12px;top:12px;background:#ff006e;color:#fff;
+ width:38px;height:38px;border-radius:50%;font-size:20px;font-weight:bold;
 }
-
-.cart-items{
-flex:1;
-overflow:auto;
-padding:15px 0;
-}
-
-.cart-item{
-display:flex;
-justify-content:space-between;
-gap:12px;
-padding:15px 0;
-border-bottom:1px solid var(--border);
-}
-
-.cart-item small{
-color:var(--muted);
-}
-
-.remove{
-background:transparent;
-color:#d88484;
-font-size:10px;
-font-weight:800;
-}
-
-.cart-total{
-padding-top:18px;
-border-top:1px solid var(--border);
-font-size:20px;
-font-weight:900;
-}
-
+.modalcontent{padding:20px}
+.modalcontent h2{font-size:27px}
+.modalprice{font-size:26px;color:#ffd000;font-weight:1000;margin:10px 0}
 .whatsapp{
-display:block;
-text-align:center;
-background:#159447;
-color:white;
-padding:14px;
-border-radius:12px;
-margin-top:12px;
-font-weight:900;
+ display:block;text-align:center;background:#25d366;color:#fff;
+ padding:14px;border-radius:10px;font-weight:1000;margin-top:15px;
 }
 
-/* MOBILE */
-
-@media(max-width:950px){
-
-.nav{
-flex-wrap:wrap;
+@media(max-width:850px){
+ .hero{grid-template-columns:1fr;min-height:500px}
+ .deals{grid-template-columns:repeat(2,1fr)}
+ .products{grid-template-columns:repeat(2,1fr)}
+ .features{grid-template-columns:repeat(2,1fr)}
+ .footergrid{grid-template-columns:1fr 1fr}
+ nav{gap:8px}
+ .logo{font-size:18px}
+ .search{order:3;flex-basis:100%}
+ nav{flex-wrap:wrap}
 }
-
-.search{
-order:3;
-flex-basis:100%;
+@media(max-width:500px){
+ .hero{padding:28px 5%}
+ .products{gap:10px}
+ .pic{height:175px}
+ .info{padding:10px}
+ .info h3{font-size:14px}
+ .price{font-size:17px}
+ .deals{gap:8px}
+ .deal{padding:15px;font-size:15px}
 }
-
-.nav-btn{
-display:none;
-}
-
-.categories{
-grid-template-columns:repeat(2,1fr);
-}
-
-.products{
-grid-template-columns:repeat(2,1fr);
-}
-
-.features{
-grid-template-columns:repeat(2,1fr);
-}
-
-.about-inner{
-grid-template-columns:1fr;
-}
-
-.footer-inner{
-grid-template-columns:1fr 1fr;
-}
-
-}
-
-@media(max-width:550px){
-
-.topbar{
-font-size:10px;
-}
-
-.nav{
-padding:13px 14px;
-gap:10px;
-}
-
-.logo{
-font-size:21px;
-}
-
-.logo small{
-font-size:6px;
-letter-spacing:2px;
-}
-
-.hero{
-min-height:620px;
-}
-
-.hero-content{
-padding:75px 18px;
-}
-
-.hero h1{
-font-size:47px;
-letter-spacing:-1px;
-}
-
-.hero p{
-font-size:14px;
-}
-
-.hero-stats{
-gap:22px;
-}
-
-.section{
-padding:60px 15px;
-}
-
-.heading h2{
-font-size:29px;
-}
-
-.categories{
-gap:10px;
-}
-
-.category{
-min-height:140px;
-padding:16px;
-}
-
-.products{
-gap:11px;
-}
-
-.product-image{
-height:175px;
-}
-
-.product-info{
-padding:13px;
-}
-
-.product h3{
-font-size:14px;
-}
-
-.product-desc{
-font-size:11px;
-}
-
-.price{
-font-size:16px;
-}
-
-.promo{
-margin:0 15px 55px;
-padding:32px 22px;
-}
-
-.promo h2{
-font-size:31px;
-}
-
-.features{
-grid-template-columns:1fr;
-}
-
-.about-inner{
-padding:60px 18px;
-}
-
-.about h2{
-font-size:34px;
-}
-
-.footer-inner{
-grid-template-columns:1fr;
-}
-
-.newsletter{
-padding:60px 15px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-✦ NAIROBI, KENYA &nbsp; • &nbsp; ONLINE SHOPPING &nbsp; • &nbsp; DELIVERY AVAILABLE
+<div class="top">
+🚚 FREE DELIVERY IN NAIROBI &nbsp; | &nbsp; 🔥 HOT DEALS &nbsp; | &nbsp; 🛍️ SHOP SMART
 </div>
 
-<header>
+<nav>
+ <div class="logo">🛍️ SHIQUO<br><span>HII STYLE</span></div>
 
-<nav class="nav">
+ <div class="search">
+  <input id="search" placeholder="Search products...">
+  <button onclick="searchProducts()">🔍</button>
+ </div>
 
-<a href="#" class="logo">
-SHIQUO <span>HII STYLE</span>
-<small>MODERN ONLINE SHOPPING</small>
-</a>
-
-<div class="search">
-
-<input
-id="searchInput"
-type="text"
-placeholder="Search fashion, electronics, home & more..."
->
-
-<button onclick="searchProducts()">⌕</button>
-
-</div>
-
-<div class="nav-actions">
-
-<button
-class="nav-btn"
-onclick="location.href='#categories'">
-Categories
-</button>
-
-<button
-class="cart-btn"
-onclick="openCart()">
-
-🛒 Cart
-<span class="cart-count" id="cartCount">0</span>
-
-</button>
-
-</div>
-
+ <div class="navcart" onclick="showCart()">🛒 CART <span id="cartCount">0</span></div>
 </nav>
 
-</header>
-
-
-<!-- HERO -->
-
 <section class="hero">
+ <div>
+  <h1>SHIQUO<br><span>HII STYLE</span></h1>
+  <p>Everything you need. One exciting place.</p>
 
-<div class="hero-content">
+  <div class="hero-badges">
+   <div class="badge">✨ QUALITY PRODUCTS</div>
+   <div class="badge">💰 GREAT PRICES</div>
+   <div class="badge">🚚 FAST DELIVERY</div>
+  </div>
 
-<span class="eyebrow">
-✦ NAIROBI'S MULTI-CATEGORY ONLINE SHOP
-</span>
-
-<h1>
-Your Style.
-<br>
-Your Home.
-<br>
-<span>Your Choice.</span>
-</h1>
-
-<p>
-Welcome to Shiquo Hii Style — a modern online marketplace
-bringing fashion, electronics, cookware, furniture, beauty,
-accessories and everyday essentials together in one destination.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#products" class="btn-primary">
-SHOP COLLECTION →
-</a>
-
-<a href="#categories" class="btn-outline">
-EXPLORE CATEGORIES
-</a>
-
-</div>
-
-<div class="hero-stats">
-
-<div class="stat">
-<strong>10+</strong>
-<span>SHOPPING CATEGORIES</span>
-</div>
-
-<div class="stat">
-<strong>24/7</strong>
-<span>ONLINE BROWSING</span>
-</div>
-
-<div class="stat">
-<strong>KE</strong>
-<span>NAIROBI BASED</span>
-</div>
-
-</div>
-
-</div>
-
+  <br>
+  <a href="#shop" class="shopbtn">🛍️ SHOP NOW</a>
+ </div>
 </section>
-
-
-<!-- CATEGORIES -->
-
-<section class="section" id="categories">
-
-<div class="heading">
-
-<div>
-
-<h2>Explore Collections</h2>
-
-<p>
-Something for everyone. Every style. Every space.
-</p>
-
-</div>
-
-</div>
-
-<div class="categories">
-
-<a class="category cat-fashion" href="#products">
-<div class="category-icon">👗</div>
-<h3>Women's Fashion</h3>
-<p>Style, clothing & trends</p>
-</a>
-
-<a class="category cat-men" href="#products">
-<div class="category-icon">👔</div>
-<h3>Men's Fashion</h3>
-<p>Modern everyday style</p>
-</a>
-
-<a class="category cat-electronics" href="#products">
-<div class="category-icon">📱</div>
-<h3>Electronics</h3>
-<p>Smart gadgets & devices</p>
-</a>
-
-<a class="category cat-kitchen" href="#products">
-<div class="category-icon">🍳</div>
-<h3>Cookware</h3>
-<p>Kitchen & dining</p>
-</a>
-
-<a class="category cat-furniture" href="#products">
-<div class="category-icon">🛋️</div>
-<h3>Furniture</h3>
-<p>Home & living</p>
-</a>
-
-<a class="category cat-beauty" href="#products">
-<div class="category-icon">✨</div>
-<h3>Beauty</h3>
-<p>Beauty & personal care</p>
-</a>
-
-<a class="category cat-home" href="#products">
-<div class="category-icon">🏠</div>
-<h3>Home Essentials</h3>
-<p>Everything for your space</p>
-</a>
-
-<a class="category cat-kids" href="#products">
-<div class="category-icon">🧸</div>
-<h3>Kids</h3>
-<p>Fun & everyday essentials</p>
-</a>
-
-<a class="category cat-accessories" href="#products">
-<div class="category-icon">👜</div>
-<h3>Accessories</h3>
-<p>Bags, watches & more</p>
-</a>
-
-<a class="category cat-appliances" href="#products">
-<div class="category-icon">⚡</div>
-<h3>Appliances</h3>
-<p>Modern home appliances</p>
-</a>
-
-</div>
-
-</section>
-
-
-<!-- PRODUCTS -->
-
-<section class="section" id="products">
-
-<div class="heading">
-
-<div>
-
-<h2>Featured Picks</h2>
-
-<p>
-Discover some of our latest and most popular products.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="products">
-
-
-<div class="product" data-name="Women's Fashion Dress">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85"
-alt="Women's Fashion Dress">
-
-<span class="badge">NEW</span>
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Women's Fashion</span>
-
-<h3>Elegant Fashion Dress</h3>
-
-<p class="product-desc">
-Modern style for everyday elegance.
-</p>
-
-<div class="price">
-KSh 2,499
-</div>
-
-<button
-class="add"
-onclick="addToCart('Elegant Fashion Dress',2499)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Wireless Headphones">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
-alt="Wireless Headphones">
-
-<span class="badge">HOT</span>
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Electronics</span>
-
-<h3>Wireless Headphones</h3>
-
-<p class="product-desc">
-Immersive sound for music and calls.
-</p>
-
-<div class="price">
-KSh 3,499
-</div>
-
-<button
-class="add"
-onclick="addToCart('Wireless Headphones',3499)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Modern Cookware Set">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
-alt="Modern Cookware">
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Kitchen</span>
-
-<h3>Premium Cookware Set</h3>
-
-<p class="product-desc">
-Upgrade your kitchen with modern cookware.
-</p>
-
-<div class="price">
-KSh 5,999
-</div>
-
-<button
-class="add"
-onclick="addToCart('Premium Cookware Set',5999)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Modern Sofa">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85"
-alt="Modern Sofa">
-
-<span class="badge">POPULAR</span>
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Furniture</span>
-
-<h3>Modern Comfort Sofa</h3>
-
-<p class="product-desc">
-Give your living space a premium touch.
-</p>
-
-<div class="price">
-KSh 28,500
-</div>
-
-<button
-class="add"
-onclick="addToCart('Modern Comfort Sofa',28500)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Premium Sneakers">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
-alt="Premium Sneakers">
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Footwear</span>
-
-<h3>Premium Sneakers</h3>
-
-<p class="product-desc">
-Versatile footwear for everyday wear.
-</p>
-
-<div class="price">
-KSh 4,999
-</div>
-
-<button
-class="add"
-onclick="addToCart('Premium Sneakers',4999)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Smart Watch">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85"
-alt="Smart Watch">
-
-<span class="badge">DEAL</span>
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Electronics</span>
-
-<h3>Smart Watch</h3>
-
-<p class="product-desc">
-Stay connected wherever you go.
-</p>
-
-<div class="price">
-KSh 3,999
-</div>
-
-<button
-class="add"
-onclick="addToCart('Smart Watch',3999)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Elegant Handbag">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"
-alt="Elegant Handbag">
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Accessories</span>
-
-<h3>Elegant Handbag</h3>
-
-<p class="product-desc">
-A stylish addition to your everyday look.
-</p>
-
-<div class="price">
-KSh 2,999
-</div>
-
-<button
-class="add"
-onclick="addToCart('Elegant Handbag',2999)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-name="Modern Home Decor">
-
-<div class="product-image">
-
-<img
-src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
-alt="Modern Home Decor">
-
-</div>
-
-<div class="product-info">
-
-<span class="category-name">Home</span>
-
-<h3>Modern Home Decor</h3>
-
-<p class="product-desc">
-Beautiful touches for your living space.
-</p>
-
-<div class="price">
-KSh 1,999
-</div>
-
-<button
-class="add"
-onclick="addToCart('Modern Home Decor',1999)">
-ADD TO CART
-</button>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- PROMO -->
-
-<section class="promo">
-
-<h2>
-Elevate Your Everyday.
-</h2>
-
-<p>
-From fashion that expresses your personality to electronics,
-kitchen essentials and furniture that transforms your home,
-Shiquo Hii Style brings different worlds of shopping together.
-</p>
-
-<a href="#categories" class="btn-primary">
-DISCOVER MORE →
-</a>
-
-</section>
-
-
-<!-- FEATURES -->
 
 <section class="section">
-
-<div class="heading">
-
-<div>
-
-<h2>
-The Shiquo Experience
-</h2>
-
-<p>
-Designed for modern shoppers.
-</p>
-
-</div>
-
-</div>
-
-<div class="features">
-
-<div class="feature">
-
-<div class="feature-icon">🛍️</div>
-
-<h3>Something for Everyone</h3>
-
-<p>
-Shop across fashion, electronics, home, kitchen,
-furniture, beauty and accessories.
-</p>
-
-</div>
-
-<div class="feature">
-
-<div class="feature-icon">✦</div>
-
-<h3>Modern Selection</h3>
-
-<p>
-Discover products chosen for style, usefulness
-and everyday living.
-</p>
-
-</div>
-
-<div class="feature">
-
-<div class="feature-icon">💳</div>
-
-<h3>Easy Ordering</h3>
-
-<p>
-Choose your products and conveniently place
-your order from your phone.
-</p>
-
-</div>
-
-<div class="feature">
-
-<div class="feature-icon">🚚</div>
-
-<h3>Convenient Delivery</h3>
-
-<p>
-Delivery options available within Nairobi
-and other locations.
-</p>
-
-</div>
-
-</div>
-
+ <div class="deals">
+  <div class="deal">🔥 HOT DEALS<br><small>Save More</small></div>
+  <div class="deal">⚡ TRENDING<br><small>Top Picks</small></div>
+  <div class="deal">✨ NEW ARRIVALS<br><small>Just In</small></div>
+  <div class="deal">🎁 SPECIAL OFFERS<br><small>Shop & Save</small></div>
+ </div>
 </section>
 
+<section class="section">
+ <h2 class="title">🛍️ SHOP <span>BY CATEGORY</span></h2>
 
-<!-- ABOUT -->
-
-<section class="about">
-
-<div class="about-inner">
-
-<div>
-
-<h2>
-Welcome to Shiquo Hii Style
-</h2>
-
-<p>
-Shiquo Hii Style is a Nairobi-based online shopping
-destination created for people who want variety,
-style and convenience in one place.
-</p>
-
-<br>
-
-<p>
-Our marketplace brings together clothing, electronics,
-cookware, furniture, beauty products, accessories,
-appliances, home essentials and more.
-</p>
-
-<br>
-
-<p>
-Whether you're shopping for yourself, your family,
-your home or simply looking for something new,
-Shiquo Hii Style makes discovering products simple
-and enjoyable.
-</p>
-
-</div>
-
-<div class="about-card">
-
-<div class="brand">
-SHIQUO HII STYLE
-</div>
-
-<hr>
-
-<p>
-<strong style="color:#f0d596;">
-Everything You Need.
-</strong>
-<br>
-All in one place.
-</p>
-
-<hr>
-
-<p>
-📍 Nairobi, Kenya<br><br>
-🛒 Online Shopping<br><br>
-📦 Delivery Available<br><br>
-📱 Mobile-Friendly Ordering
-</p>
-
-</div>
-
-</div>
-
+ <div class="categories">
+  <div class="cat"><img src="fashion.jpg"><b>FASHION</b></div>
+  <div class="cat"><img src="electronics.jpg"><b>ELECTRONICS</b></div>
+  <div class="cat"><img src="cookware.jpg"><b>COOKWARE</b></div>
+  <div class="cat"><img src="furniture.jpg"><b>FURNITURE</b></div>
+  <div class="cat"><img src="beauty.jpg"><b>BEAUTY</b></div>
+  <div class="cat"><img src="sports.jpg"><b>SPORTS</b></div>
+  <div class="cat"><img src="toys.jpg"><b>TOYS & KIDS</b></div>
+ </div>
 </section>
 
+<section class="section" id="shop">
+ <h2 class="title">🔥 <span>TRENDING NOW</span></h2>
 
-<!-- NEWSLETTER -->
+ <div class="products">
 
-<section class="newsletter">
+  <div class="card">
+   <div class="pic"><span class="tag">-20%</span><img src="sneakers.jpg"></div>
+   <div class="info">
+    <h3>Trendy Sneakers</h3>
+    <div class="price">KSh 2,800 <span class="old">3,500</span></div>
+    <div class="stars">★★★★★</div>
+    <div class="actions">
+     <button class="add" onclick="addCart('Trendy Sneakers',2800)">ADD TO CART</button>
+     <button class="view" onclick="openProduct('Trendy Sneakers','KSh 2,800','sneakers.jpg')">VIEW</button>
+    </div>
+   </div>
+  </div>
 
-<h2>
-Stay In The Style Loop
-</h2>
+  <div class="card">
+   <div class="pic"><span class="tag">NEW</span><img src="smartwatch.jpg"></div>
+   <div class="info">
+    <h3>Smart Watch</h3>
+    <div class="price">KSh 4,999</div>
+    <div class="stars">★★★★★</div>
+    <div class="actions">
+     <button class="add" onclick="addCart('Smart Watch',4999)">ADD TO CART</button>
+     <button class="view" onclick="openProduct('Smart Watch','KSh 4,999','smartwatch.jpg')">VIEW</button>
+    </div>
+   </div>
+  </div>
 
-<p>
-Be the first to discover new arrivals, special offers
-and exciting products.
-</p>
+  <div class="card">
+   <div class="pic"><span class="tag">HOT</span><img src="cookware-set.jpg"></div>
+   <div class="info">
+    <h3>Non-Stick Cookware Set</h3>
+    <div class="price">KSh 6,800</div>
+    <div class="stars">★★★★★</div>
+    <div class="actions">
+     <button class="add" onclick="addCart('Cookware Set',6800)">ADD TO CART</button>
+     <button class="view" onclick="openProduct('Cookware Set','KSh 6,800','cookware-set.jpg')">VIEW</button>
+    </div>
+   </div>
+  </div>
 
-<div class="newsletter-form">
+  <div class="card">
+   <div class="pic"><span class="tag">SALE</span><img src="sofa.jpg"></div>
+   <div class="info">
+    <h3>L-Shape Sofa Set</h3>
+    <div class="price">KSh 34,999</div>
+    <div class="stars">★★★★★</div>
+    <div class="actions">
+     <button class="add" onclick="addCart('L-Shape Sofa Set',34999)">ADD TO CART</button>
+     <button class="view" onclick="openProduct('L-Shape Sofa Set','KSh 34,999','sofa.jpg')">VIEW</button>
+    </div>
+   </div>
+  </div>
 
-<input
-type="email"
-placeholder="Enter your email">
+ </div>
 
-<button onclick="subscribe()">
-JOIN
-</button>
-
-</div>
-
+ <div class="banner">
+  <h2>MEGA SALE 🔥</h2>
+  <p>Big style. Better prices. Limited offers.</p>
+  <button>SHOP THE DEALS</button>
+ </div>
 </section>
 
+<section class="section">
+ <h2 class="title">✨ WHY <span>SHOP WITH US?</span></h2>
 
-<!-- FOOTER -->
+ <div class="features">
+  <div class="feature">🚚<strong>Fast Delivery</strong><small>Nairobi & beyond</small></div>
+  <div class="feature">💰<strong>Great Prices</strong><small>Shop & save</small></div>
+  <div class="feature">🔒<strong>Secure Shopping</strong><small>Shop with confidence</small></div>
+  <div class="feature">💬<strong>Easy Ordering</strong><small>WhatsApp support</small></div>
+ </div>
+</section>
 
 <footer>
+ <div class="footergrid">
+  <div>
+   <h3>🛍️ SHIQUO HII STYLE</h3>
+   <p>Your exciting online shop for fashion, electronics, cookware, furniture and much more.</p>
+   <p>📍 Nairobi, Kenya</p>
+  </div>
 
-<div class="footer-inner">
+  <div>
+   <h3>SHOP</h3>
+   <a href="#shop">All Products</a>
+   <a href="#shop">Trending</a>
+   <a href="#shop">Deals</a>
+  </div>
 
-<div>
+  <div>
+   <h3>HELP</h3>
+   <a href="#">My Orders</a>
+   <a href="#">Delivery</a>
+   <a href="#">Returns</a>
+   <a href="#">Contact Us</a>
+  </div>
 
-<div class="footer-logo">
-SHIQUO <span>HII STYLE</span>
-</div>
-
-<p>
-Everything you need, all in one place.
-A modern online shopping destination
-in Nairobi, Kenya.
-</p>
-
-</div>
-
-<div>
-
-<h3>Shop</h3>
-
-<a href="#products">Featured Products</a>
-<a href="#categories">Categories</a>
-<a href="#products">New Arrivals</a>
-<a href="#products">Deals</a>
-
-</div>
-
-<div>
-
-<h3>Categories</h3>
-
-<a href="#products">Fashion</a>
-<a href="#products">Electronics</a>
-<a href="#products">Kitchen</a>
-<a href="#products">Furniture</a>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<a href="https://wa.me/254700000000">
-WhatsApp
-</a>
-
-<a href="#">
-Nairobi, Kenya
-</a>
-
-<a href="#">
-Delivery Available
-</a>
-
-<a href="#">
-Online Shopping
-</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-© 2026 Shiquo Hii Style • Nairobi, Kenya
-<br>
-Shop More. Discover More. Live Better.
-
-</div>
-
+  <div>
+   <h3>CONTACT</h3>
+   <p>📍 Nairobi, Kenya</p>
+   <p>📱 WhatsApp Orders</p>
+   <p>💳 M-Pesa Available</p>
+  </div>
+ </div>
 </footer>
 
-
-<!-- CART -->
-
-<div class="cart-overlay" id="cartOverlay">
-
-<div class="cart">
-
-<div class="cart-head">
-
-<h2>Your Cart</h2>
-
-<button
-class="close"
-onclick="closeCart()">
-×
-</button>
-
-</div>
-
-<div
-class="cart-items"
-id="cartItems">
-
-Your cart is empty.
-
-</div>
-
-<div class="cart-total">
-
-Total: KSh
-<span id="cartTotal">0</span>
-
-</div>
-
-<a
-id="whatsappOrder"
-class="whatsapp"
-href="#"
-target="_blank">
-
-ORDER VIA WHATSAPP
-
+<a class="float" href="https://wa.me/254700000000?text=Hello%20Shiquo%20Hii%20Style%2C%20I%20would%20like%20to%20order.">
+ 💬 WhatsApp
 </a>
 
+<!-- PRODUCT POPUP -->
+<div class="modal" id="modal">
+ <div class="modalbox">
+  <button class="close" onclick="closeProduct()">×</button>
+  <img id="modalImg">
+  <div class="modalcontent">
+   <h2 id="modalName"></h2>
+   <div class="modalprice" id="modalPrice"></div>
+   <p>✨ Quality product • 🚚 Delivery available</p>
+   <button class="add" style="width:100%;margin-top:15px"
+    onclick="addModalCart()">🛒 ADD TO CART</button>
+   <a id="modalWhatsApp" class="whatsapp">💬 ORDER ON WHATSAPP</a>
+  </div>
+ </div>
 </div>
-
-</div>
-
 
 <script>
-
 let cart=[];
+let currentProduct={};
 
-const WHATSAPP_NUMBER="254700000000";
-
-
-function addToCart(name,price){
-
-cart.push({
-name:name,
-price:price
-});
-
-updateCart();
-openCart();
-
+function addCart(name,price){
+ cart.push({name,price});
+ document.getElementById("cartCount").textContent=cart.length;
+ alert(name+" added to cart 🛒");
 }
 
+function openProduct(name,price,img){
+ currentProduct={name,price,img};
+ document.getElementById("modalName").textContent=name;
+ document.getElementById("modalPrice").textContent=price;
+ document.getElementById("modalImg").src=img;
 
-function updateCart(){
+ document.getElementById("modalWhatsApp").href=
+ "https://wa.me/254700000000?text="+
+ encodeURIComponent("Hello Shiquo Hii Style, I want to order: "+name+" - "+price);
 
-document.getElementById("cartCount").textContent=cart.length;
-
-const container=
-document.getElementById("cartItems");
-
-let total=0;
-
-if(cart.length===0){
-
-container.innerHTML=
-"Your cart is empty.";
-
-document.getElementById("cartTotal")
-.textContent="0";
-
-document.getElementById("whatsappOrder")
-.href="#";
-
-return;
-
+ document.getElementById("modal").style.display="flex";
 }
 
-container.innerHTML="";
-
-cart.forEach((item,index)=>{
-
-total+=item.price;
-
-const div=
-document.createElement("div");
-
-div.className="cart-item";
-
-div.innerHTML=`
-
-<div>
-
-<strong>${item.name}</strong>
-
-<br>
-
-<small>
-KSh ${item.price.toLocaleString()}
-</small>
-
-</div>
-
-<button
-class="remove"
-onclick="removeItem(${index})">
-
-REMOVE
-
-</button>
-
-`;
-
-container.appendChild(div);
-
-});
-
-
-document.getElementById("cartTotal")
-.textContent=total.toLocaleString();
-
-
-let message=
-"Hello Shiquo Hii Style!%0A%0A";
-
-message+=
-"I would like to order:%0A%0A";
-
-
-cart.forEach(item=>{
-
-message+=
-"• "+
-item.name+
-" — KSh "+
-item.price.toLocaleString()+
-"%0A";
-
-});
-
-
-message+=
-"%0ATotal: KSh "+
-total.toLocaleString()+
-"%0A%0A";
-
-message+=
-"Please confirm availability and delivery.";
-
-
-document.getElementById("whatsappOrder")
-.href=
-"https://wa.me/"+
-WHATSAPP_NUMBER+
-"?text="+
-message;
-
+function closeProduct(){
+ document.getElementById("modal").style.display="none";
 }
 
-
-function removeItem(index){
-
-cart.splice(index,1);
-
-updateCart();
-
+function addModalCart(){
+ let price=parseInt(currentProduct.price.replace(/[^0-9]/g,""));
+ addCart(currentProduct.name,price);
+ closeProduct();
 }
 
+function showCart(){
+ if(cart.length===0){
+  alert("Your cart is empty 🛒");
+  return;
+ }
 
-function openCart(){
+ let message="Hello Shiquo Hii Style,%0A%0AI would like to order:%0A";
+ let total=0;
 
-document.getElementById("cartOverlay")
-.style.display="block";
+ cart.forEach((item,i)=>{
+  message+=(i+1)+". "+item.name+" - KSh "+item.price+"%0A";
+  total+=item.price;
+ });
 
+ message+="%0ATotal: KSh "+total;
+
+ window.open(
+  "https://wa.me/254700000000?text="+message,
+  "_blank"
+ );
 }
-
-
-function closeCart(){
-
-document.getElementById("cartOverlay")
-.style.display="none";
-
-}
-
 
 function searchProducts(){
+ let q=document.getElementById("search").value.toLowerCase();
+ let cards=document.querySelectorAll(".card");
 
-const query=
-document
-.getElementById("searchInput")
-.value
-.toLowerCase()
-.trim();
-
-const products=
-document.querySelectorAll(".product");
-
-products.forEach(product=>{
-
-const name=
-product
-.dataset
-.name
-.toLowerCase();
-
-product.style.display=
-name.includes(query)
-?
-"block"
-:
-"none";
-
-});
-
-document
-.getElementById("products")
-.scrollIntoView({
-behavior:"smooth"
-});
-
+ cards.forEach(card=>{
+  card.style.display=
+   card.innerText.toLowerCase().includes(q) ? "block":"none";
+ });
 }
-
-
-document
-.getElementById("searchInput")
-.addEventListener(
-"keyup",
-function(event){
-
-if(event.key==="Enter"){
-searchProducts();
-}
-
-});
-
-
-function subscribe(){
-
-alert(
-"Thank you for joining Shiquo Hii Style!"
-);
-
-}
-
 </script>
 
 </body>
