@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Shiquo Hii Style | Kenya Online Shop</title>
+
+<meta name="description" content="Shiquo Hii Style — Kenyan online shop for fashion, shoes, electronics, home, beauty and lifestyle products.">
+<meta name="theme-color" content="#075c42">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--green:#075c42;
+--green2:#087451;
+--green3:#033c2b;
+--burgundy:#74152d;
+--burgundy2:#9b2341;
+--gold:#d6a94b;
+--gold2:#f4d47d;
+--cream:#fff1d0;
+--dark:#071b15;
+--card:#0d4635;
+--text:#fff8ea;
+--muted:#d4c7b5;
+--line:rgba(244,212,125,.22);
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'DM Sans',sans-serif;
+color:var(--text);
+background:
+radial-gradient(circle at 10% 5%,rgba(155,35,65,.4),transparent 25%),
+radial-gradient(circle at 90% 15%,rgba(214,169,75,.13),transparent 25%),
+linear-gradient(135deg,#03291e,#075c42 45%,#053728 75%,#031c15);
+min-height:100vh;
+}
+
+body:before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+opacity:.25;
+background:
+linear-gradient(45deg,transparent 48%,rgba(244,212,125,.025) 49%,transparent 51%),
+linear-gradient(-45deg,transparent 48%,rgba(244,212,125,.02) 49%,transparent 51%);
+background-size:70px 70px;
+z-index:-1;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button{
+font-family:inherit;
+cursor:pointer;
+}
+
+/* TOP BAR */
+
+.topbar{
+background:linear-gradient(90deg,
+#651127,
+#8e1d39,
+#c3943f,
+#087451,
+#075c42);
+padding:9px 12px;
+text-align:center;
+font-size:10px;
+font-weight:800;
+letter-spacing:1px;
+color:#fff3d2;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(3,43,31,.95);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--line);
+}
+
+.nav{
+max-width:1400px;
+margin:auto;
+padding:14px 18px;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:25px;
+font-weight:800;
+white-space:nowrap;
+}
+
+.logo span{
+color:var(--gold2);
+}
+
+.logo small{
+display:block;
+font-family:'DM Sans',sans-serif;
+font-size:7px;
+letter-spacing:3px;
+color:#c9bfae;
+margin-top:2px;
+}
+
+/* SEARCH */
+
+.search{
+height:45px;
+flex:1;
+display:flex;
+background:rgba(255,255,255,.07);
+border:1px solid var(--line);
+border-radius:30px;
+overflow:hidden;
+}
+
+.search input{
+flex:1;
+border:0;
+outline:0;
+background:transparent;
+color:white;
+padding:0 18px;
+}
+
+.search input::placeholder{
+color:#b7c8c0;
+}
+
+.search button{
+width:55px;
+border:0;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+color:#3b2510;
+font-size:20px;
+font-weight:900;
+}
+
+/* NAV ACTIONS */
+
+.nav-actions{
+display:flex;
+align-items:center;
+gap:9px;
+}
+
+.nav-btn{
+border:0;
+background:transparent;
+color:#f5e5c5;
+font-weight:800;
+}
+
+.cart-btn{
+border:0;
+padding:11px 16px;
+border-radius:30px;
+background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
+color:white;
+font-weight:900;
+border:1px solid rgba(244,212,125,.3);
+}
+
+.cart-count{
+display:inline-flex;
+width:20px;
+height:20px;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:var(--gold);
+color:#351b0b;
+font-size:10px;
+margin-left:4px;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:620px;
+display:flex;
+align-items:center;
+overflow:hidden;
+
+/* Replace hero.jpg with your actual GitHub hero image */
+background:
+linear-gradient(90deg,
+rgba(2,32,23,.96) 5%,
+rgba(4,62,43,.75) 48%,
+rgba(5,54,38,.2)),
+url("hero.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero:after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(135deg,
+rgba(116,21,45,.28),
+transparent 45%,
+rgba(214,169,75,.12));
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:1400px;
+width:100%;
+margin:auto;
+padding:85px 20px;
+}
+
+.kenya-tag{
+display:inline-block;
+padding:8px 15px;
+border-radius:30px;
+background:rgba(214,169,75,.14);
+border:1px solid rgba(244,212,125,.4);
+color:var(--gold2);
+font-size:10px;
+font-weight:900;
+letter-spacing:1.5px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:clamp(48px,7vw,88px);
+line-height:.94;
+margin:22px 0;
+max-width:800px;
+letter-spacing:-2px;
+}
+
+.hero h1 span{
+background:linear-gradient(90deg,#f4d47d,#fff0bd,#cda044);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+max-width:600px;
+font-size:15px;
+line-height:1.7;
+color:#e3ddd0;
+margin-bottom:26px;
+}
+
+.hero-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+display:inline-block;
+padding:14px 25px;
+border-radius:30px;
+background:linear-gradient(135deg,var(--gold),var(--gold2));
+color:#3e260d;
+font-weight:900;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.btn-green{
+display:inline-block;
+padding:13px 23px;
+border-radius:30px;
+background:linear-gradient(135deg,var(--green2),var(--green));
+border:1px solid rgba(244,212,125,.3);
+font-weight:900;
+}
+
+.hero-stats{
+display:flex;
+gap:30px;
+margin-top:38px;
+flex-wrap:wrap;
+}
+
+.stat strong{
+display:block;
+font-family:'Playfair Display',serif;
+font-size:24px;
+color:var(--gold2);
+}
+
+.stat span{
+font-size:9px;
+letter-spacing:1px;
+color:#c6c0b5;
+}
+
+/* SECTIONS */
+
+.section{
+max-width:1400px;
+margin:auto;
+padding:65px 20px;
+}
+
+.heading{
+margin-bottom:25px;
+}
+
+.heading h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+}
+
+.heading p{
+font-size:11px;
+color:var(--muted);
+margin-top:5px;
+}
+
+/* CATEGORIES */
+
+.categories{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:13px;
+}
+
+.category{
+height:205px;
+position:relative;
+overflow:hidden;
+border-radius:17px;
+background:var(--card);
+border:1px solid var(--line);
+}
+
+.category img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.category:after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(transparent 25%,rgba(0,24,17,.9));
+}
+
+.category:hover img{
+transform:scale(1.08);
+}
+
+.category-info{
+position:absolute;
+z-index:2;
+left:15px;
+bottom:14px;
+}
+
+.category-info h3{
+font-size:16px;
+}
+
+.category-info p{
+font-size:9px;
+color:#ddd3c2;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:17px;
+}
+
+.product{
+overflow:hidden;
+border-radius:19px;
+background:
+linear-gradient(145deg,
+rgba(13,81,60,.95),
+rgba(5,53,39,.98));
+border:1px solid var(--line);
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+border-color:rgba(244,212,125,.5);
+}
+
+.product-image{
+height:250px;
+position:relative;
+overflow:hidden;
+background:#063c2c;
+}
+
+.product-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.product:hover .product-image img{
+transform:scale(1.06);
+}
+
+.badge{
+position:absolute;
+top:12px;
+left:12px;
+padding:6px 10px;
+border-radius:20px;
+background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
+color:white;
+font-size:8px;
+font-weight:900;
+}
+
+.product-info{
+padding:15px;
+}
+
+.category-name{
+font-size:8px;
+text-transform:uppercase;
+letter-spacing:1.2px;
+color:var(--gold2);
+font-weight:900;
+}
+
+.product h3{
+font-size:15px;
+margin:6px 0;
+}
+
+.product-desc{
+font-size:10px;
+color:#c8c5ba;
+margin-bottom:10px;
+}
+
+.price{
+font-size:18px;
+font-weight:900;
+color:#ffe5a4;
+}
+
+.add{
+width:100%;
+padding:11px;
+margin-top:12px;
+border-radius:10px;
+background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
+border:1px solid rgba(244,212,125,.3);
+color:white;
+font-weight:900;
+}
+
+/* MPESA */
+
+.mpesa{
+max-width:1350px;
+margin:10px auto 65px;
+padding:45px 25px;
+border-radius:25px;
+background:
+linear-gradient(110deg,
+rgba(0,91,63,.98),
+rgba(6,67,49,.95));
+border:1px solid rgba(244,212,125,.3);
+text-align:center;
+}
+
+.mpesa h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+color:var(--gold2);
+}
+
+.mpesa-number{
+font-size:27px;
+font-weight:900;
+margin:14px 0;
+}
+
+.mpesa p{
+font-size:12px;
+color:#d7ddd6;
+margin-bottom:18px;
+}
+
+.mpesa-btn{
+display:inline-block;
+padding:13px 25px;
+border-radius:30px;
+background:var(--gold);
+color:#35200c;
+font-weight:900;
+}
+
+/* PROMO */
+
+.promo{
+margin:0 auto 65px;
+max-width:1350px;
+min-height:300px;
+padding:55px 35px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+border-radius:25px;
+overflow:hidden;
+position:relative;
+background:
+linear-gradient(90deg,
+rgba(100,13,38,.95),
+rgba(112,19,45,.65)),
+url("promo.jpg");
+background-size:cover;
+background-position:center;
+border:1px solid var(--line);
+}
+
+.promo h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+}
+
+.promo p{
+max-width:600px;
+font-size:13px;
+line-height:1.7;
+color:#eee2d2;
+margin:10px 0 20px;
+}
+
+/* FEATURES */
+
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+}
+
+.feature{
+padding:23px;
+border-radius:17px;
+background:linear-gradient(145deg,rgba(115,21,45,.7),rgba(7,67,49,.9));
+border:1px solid var(--line);
+}
+
+.feature-icon{
+font-size:25px;
+margin-bottom:10px;
+}
+
+.feature h3{
+font-size:14px;
+margin-bottom:6px;
+}
+
+.feature p{
+font-size:10px;
+line-height:1.7;
+color:#cfcac0;
+}
+
+/* ABOUT */
+
+.about{
+background:
+radial-gradient(circle at 10% 30%,rgba(155,35,65,.3),transparent 30%),
+#043c2b;
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+}
+
+.about-inner{
+max-width:1400px;
+margin:auto;
+padding:70px 20px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:60px;
+}
+
+.about h2{
+font-family:'Playfair Display',serif;
+font-size:43px;
+margin-bottom:16px;
+}
+
+.about p{
+font-size:12px;
+line-height:1.8;
+color:#d6d7cd;
+}
+
+.about-card{
+padding:28px;
+border-radius:20px;
+background:rgba(214,169,75,.08);
+border:1px solid var(--line);
+}
+
+.brand{
+font-family:'Playfair Display',serif;
+font-size:26px;
+color:var(--gold2);
+}
+
+.about-card hr{
+border:0;
+border-top:1px solid var(--line);
+margin:18px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#021c14;
+border-top:1px solid var(--line);
+}
+
+.footer-inner{
+max-width:1400px;
+margin:auto;
+padding:50px 20px 25px;
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:35px;
+}
+
+.footer-logo{
+font-family:'Playfair Display',serif;
+font-size:25px;
+}
+
+.footer-logo span{
+color:var(--gold2);
+}
+
+.footer h3{
+font-size:13px;
+color:var(--gold2);
+margin-bottom:12px;
+}
+
+.footer p,
+.footer a{
+font-size:10px;
+line-height:1.8;
+color:#aaaFA8;
+display:block;
+margin:7px 0;
+}
+
+.footer a:hover{
+color:var(--gold2);
+}
+
+.copyright{
+text-align:center;
+padding:18px;
+font-size:9px;
+color:#819087;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+/* CART */
+
+.cart-overlay{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.75);
+z-index:3000;
+}
+
+.cart{
+position:absolute;
+right:0;
+top:0;
+height:100%;
+width:min(430px,100%);
+padding:22px;
+display:flex;
+flex-direction:column;
+background:linear-gradient(145deg,#07563f,#033323);
+border-left:1px solid var(--line);
+}
+
+.cart-head{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-bottom:15px;
+border-bottom:1px solid var(--line);
+}
+
+.cart-head h2{
+font-family:'Playfair Display',serif;
+}
+
+.close{
+background:transparent;
+border:0;
+color:#ffe6b6;
+font-size:28px;
+}
+
+.cart-items{
+flex:1;
+overflow:auto;
+padding:15px 0;
+}
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+gap:10px;
+padding:14px 0;
+border-bottom:1px solid var(--line);
+}
+
+.cart-item small{
+color:#c7c7bd;
+}
+
+.remove{
+border:0;
+background:transparent;
+color:#ffb6c2;
+font-size:9px;
+font-weight:900;
+}
+
+.cart-total{
+padding-top:15px;
+border-top:1px solid var(--line);
+font-size:20px;
+font-weight:900;
+color:#ffe0a0;
+}
+
+.whatsapp{
+display:block;
+text-align:center;
+padding:14px;
+margin-top:12px;
+border-radius:12px;
+background:linear-gradient(135deg,#0c9b50,#18c968);
+color:white;
+font-weight:900;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+.nav{
+flex-wrap:wrap;
+}
+
+.search{
+order:3;
+flex-basis:100%;
+}
+
+.nav-btn{
+display:none;
+}
+
+.categories{
+grid-template-columns:repeat(2,1fr);
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about-inner{
+grid-template-columns:1fr;
+}
+
+.footer-inner{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:550px){
+
+.topbar{
+font-size:8px;
+}
+
+.nav{
+padding:12px 13px;
+}
+
+.logo{
+font-size:20px;
+}
+
+.hero{
+min-height:600px;
+}
+
+.hero-content{
+padding:65px 17px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:12px;
+}
+
+.section{
+padding:50px 14px;
+}
+
+.heading h2{
+font-size:29px;
+}
+
+.categories{
+gap:8px;
+}
+
+.category{
+height:155px;
+}
+
+.category-info{
+left:11px;
+bottom:11px;
+}
+
+.category-info h3{
+font-size:13px;
+}
+
+.products{
+gap:9px;
+}
+
+.product-image{
+height:180px;
+}
+
+.product-info{
+padding:11px;
+}
+
+.product h3{
+font-size:12px;
+}
+
+.price{
+font-size:15px;
+}
+
+.mpesa{
+margin:0 14px 50px;
+padding:35px 18px;
+}
+
+.mpesa h2{
+font-size:30px;
+}
+
+.mpesa-number{
+font-size:22px;
+}
+
+.promo{
+margin:0 14px 50px;
+padding:35px 20px;
+}
+
+.promo h2{
+font-size:31px;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.about-inner{
+padding:55px 17px;
+}
+
+.about h2{
+font-size:34px;
+}
+
+.footer-inner{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:380px){
+
+.categories{
+grid-template-columns:1fr;
+}
+
+.category{
+height:190px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
+.product-image{
+height:240px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+🇰🇪 MADE FOR KENYA &nbsp; • &nbsp; NAIROBI &nbsp; • &nbsp; DELIVERY AVAILABLE
+</div>
+
+<header>
+<nav class="nav">
+
+<a href="#" class="logo">
+SHIQUO <span>HII STYLE</span>
+<small>KENYAN ONLINE SHOP</small>
+</a>
+
+<div class="search">
+<input id="searchInput" type="text" placeholder="Search products...">
+<button onclick="searchProducts()">⌕</button>
+</div>
+
+<div class="nav-actions">
+<button class="nav-btn" onclick="location.href='#categories'">Categories</button>
+
+<button class="cart-btn" onclick="openCart()">
+🛒 Cart
+<span class="cart-count" id="cartCount">0</span>
+</button>
+</div>
+
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="kenya-tag">
+🇰🇪 SHIQUO HII STYLE • KENYA
+</span>
+
+<h1>
+Shop.
+<br>
+Live.
+<br>
+<span>In Style.</span>
+</h1>
+
+<p>
+Fashion, shoes, electronics, home, beauty and everyday essentials — all in one Kenyan online shop.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn-primary">
+SHOP NOW →
+</a>
+
+<a href="#categories" class="btn-green">
+EXPLORE CATEGORIES
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat">
+<strong>🇰🇪</strong>
+<span>KENYA</span>
+</div>
+
+<div class="stat">
+<strong>24/7</strong>
+<span>ONLINE</span>
+</div>
+
+<div class="stat">
+<strong>KSh</strong>
+<span>LOCAL PRICES</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+
+<div class="heading">
+<h2>Shop Categories</h2>
+<p>Everything you need, in one place.</p>
+</div>
+
+<div class="categories">
+
+<a class="category" href="#products">
+<img src="category-fashion.jpg" alt="Fashion">
+<div class="category-info">
+<h3>Fashion</h3>
+<p>Modern Kenyan style</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-shoes.jpg" alt="Shoes">
+<div class="category-info">
+<h3>Shoes</h3>
+<p>Step out in style</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-electronics.jpg" alt="Electronics">
+<div class="category-info">
+<h3>Electronics</h3>
+<p>Tech & gadgets</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-kitchen.jpg" alt="Kitchen">
+<div class="category-info">
+<h3>Kitchen</h3>
+<p>Kitchen essentials</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-furniture.jpg" alt="Furniture">
+<div class="category-info">
+<h3>Furniture</h3>
+<p>Beautiful living</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-home.jpg" alt="Home">
+<div class="category-info">
+<h3>Home</h3>
+<p>Home essentials</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-beauty.jpg" alt="Beauty">
+<div class="category-info">
+<h3>Beauty</h3>
+<p>Beauty essentials</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-accessories.jpg" alt="Accessories">
+<div class="category-info">
+<h3>Accessories</h3>
+<p>Complete your look</p>
+</div>
+</a>
+
+<a class="category" href="#products">
+<img src="category-fitness.jpg" alt="Fitness">
+<div class="category-info">
+<h3>Fitness</h3>
+<p>Move & perform</p>
+</div>
+</a>
+
+</div>
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+<div class="heading">
+<h2>Featured Picks</h2>
+<p>Popular products at Shiquo Hii Style.</p>
+</div>
+
+<div class="products">
+
+<!-- PRODUCT 1 -->
+
+<div class="product" data-name="Ladies Fashion">
+
+<div class="product-image">
+<img src="product1.jpg" alt="Ladies Fashion">
+<span class="badge">NEW</span>
+</div>
+
+<div class="product-info">
+<span class="category-name">Fashion</span>
+<h3>Elegant Ladies Style</h3>
+<p class="product-desc">Perfect for everyday wear.</p>
+<div class="price">KSh 2,499</div>
+
+<button class="add" onclick="addToCart('Elegant Ladies Style',2499)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product" data-name="Premium Shoes">
+
+<div class="product-image">
+<img src="product2.jpg" alt="Premium Shoes">
+<span class="badge">HOT</span>
+</div>
+
+<div class="product-info">
+<span class="category-name">Shoes</span>
+<h3>Premium Footwear</h3>
+<p class="product-desc">Comfort for every step.</p>
+<div class="price">KSh 4,999</div>
+
+<button class="add" onclick="addToCart('Premium Footwear',4999)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product" data-name="Electronics">
+
+<div class="product-image">
+<img src="product3.jpg" alt="Electronics">
+<span class="badge">DEAL</span>
+</div>
+
+<div class="product-info">
+<span class="category-name">Electronics</span>
+<h3>Smart Electronics</h3>
+<p class="product-desc">Useful tech for everyday life.</p>
+<div class="price">KSh 3,499</div>
+
+<button class="add" onclick="addToCart('Smart Electronics',3499)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product" data-name="Kitchen">
+
+<div class="product-image">
+<img src="product4.jpg" alt="Kitchen">
+</div>
+
+<div class="product-info">
+<span class="category-name">Kitchen</span>
+<h3>Kitchen Essential</h3>
+<p class="product-desc">Make cooking easier.</p>
+<div class="price">KSh 5,999</div>
+
+<button class="add" onclick="addToCart('Kitchen Essential',5999)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="product" data-name="Furniture">
+
+<div class="product-image">
+<img src="product5.jpg" alt="Furniture">
+<span class="badge">POPULAR</span>
+</div>
+
+<div class="product-info">
+<span class="category-name">Furniture</span>
+<h3>Modern Furniture</h3>
+<p class="product-desc">Comfortable modern living.</p>
+<div class="price">KSh 28,500</div>
+
+<button class="add" onclick="addToCart('Modern Furniture',28500)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="product" data-name="Accessories">
+
+<div class="product-image">
+<img src="product6.jpg" alt="Accessories">
+</div>
+
+<div class="product-info">
+<span class="category-name">Accessories</span>
+<h3>Smart Accessories</h3>
+<p class="product-desc">Complete your everyday look.</p>
+<div class="price">KSh 3,999</div>
+
+<button class="add" onclick="addToCart('Smart Accessories',3999)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="product" data-name="Beauty">
+
+<div class="product-image">
+<img src="product7.jpg" alt="Beauty">
+</div>
+
+<div class="product-info">
+<span class="category-name">Beauty</span>
+<h3>Beauty Essentials</h3>
+<p class="product-desc">Everyday beauty care.</p>
+<div class="price">KSh 2,999</div>
+
+<button class="add" onclick="addToCart('Beauty Essentials',2999)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="product" data-name="Fitness">
+
+<div class="product-image">
+<img src="product8.jpg" alt="Fitness">
+</div>
+
+<div class="product-info">
+<span class="category-name">Fitness</span>
+<h3>Fitness Essentials</h3>
+<p class="product-desc">Train. Move. Perform.</p>
+<div class="price">KSh 3,500</div>
+
+<button class="add" onclick="addToCart('Fitness Essentials',3500)">
+ADD TO CART
+</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MPESA -->
+
+<section class="mpesa">
+
+<h2>Pay with M-Pesa 🇰🇪</h2>
+
+<div class="mpesa-number">
+07XX XXX XXX
+</div>
+
+<p>
+Add your actual M-Pesa number here. After ordering, send your payment confirmation through WhatsApp.
+</p>
+
+<a class="mpesa-btn" href="#products">
+CONTINUE SHOPPING
+</a>
+
+</section>
+
+<!-- PROMO -->
+
+<section class="promo">
+
+<h2>Kenya, Shop Your Way.</h2>
+
+<p>
+Great products, easy ordering and convenient delivery — all from your phone.
+</p>
+
+<a href="#products" class="btn-primary">
+SHOP NOW →
+</a>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="section">
+
+<div class="heading">
+<h2>Why Shiquo?</h2>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<div class="feature-icon">🇰🇪</div>
+<h3>Made for Kenya</h3>
+<p>Shopping designed around Kenyan customers and prices.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📱</div>
+<h3>Easy Ordering</h3>
+<p>Browse and order directly from your phone.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💳</div>
+<h3>M-Pesa</h3>
+<p>Simple local payment options.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🚚</div>
+<h3>Delivery</h3>
+<p>Delivery options available across Kenya.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="about-inner">
+
+<div>
+<h2>Shiquo Hii Style</h2>
+
+<p>
+A modern Kenyan online shopping destination bringing fashion, shoes, electronics, home, beauty and lifestyle products together.
+</p>
+</div>
+
+<div class="about-card">
+
+<div class="brand">
+SHIQUO HII STYLE
+</div>
+
+<hr>
+
+<p>
+<strong style="color:#f4d47d">
+STYLE • HOME • LIFESTYLE
+</strong>
+</p>
+
+<hr>
+
+<p>
+🇰🇪 Kenya<br><br>
+📦 Delivery Available<br><br>
+📱 Order Online<br><br>
+💳 M-Pesa Accepted
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-inner">
+
+<div>
+<div class="footer-logo">
+SHIQUO <span>HII STYLE</span>
+</div>
+
+<p>
+Kenyan online shopping.<br>
+Style • Home • Lifestyle
+</p>
+</div>
+
+<div>
+<h3>SHOP</h3>
+<a href="#products">Products</a>
+<a href="#categories">Categories</a>
+<a href="#products">New Arrivals</a>
+</div>
+
+<div>
+<h3>CATEGORIES</h3>
+<a href="#products">Fashion</a>
+<a href="#products">Shoes</a>
+<a href="#products">Electronics</a>
+<a href="#products">Home</a>
+</div>
+
+<div>
+<h3>CONTACT</h3>
+<a href="#">🇰🇪 Kenya</a>
+<a href="https://wa.me/254700000000">💬 WhatsApp</a>
+<a href="#products">🚚 Delivery</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Shiquo Hii Style • Kenya
+</div>
+
+</footer>
+
+<!-- CART -->
+
+<div class="cart-overlay" id="cartOverlay">
+
+<div class="cart">
+
+<div class="cart-head">
+<h2>Your Cart</h2>
+
+<button class="close" onclick="closeCart()">
+×
+</button>
+</div>
+
+<div class="cart-items" id="cartItems">
+Your cart is empty.
+</div>
+
+<div class="cart-total">
+Total: KSh <span id="cartTotal">0</span>
+</div>
+
+<a id="whatsappOrder"
+class="whatsapp"
+href="#"
+target="_blank">
+ORDER VIA WHATSAPP
+</a>
+
+</div>
+</div>
+
+<script>
+
+let cart=[];
+
+/* CHANGE THIS TO YOUR REAL WHATSAPP NUMBER */
+const WHATSAPP_NUMBER="254700000000";
+
+function addToCart(name,price){
+
+cart.push({
+name:name,
+price:price
+});
+
+updateCart();
+openCart();
+}
+
+function removeItem(index){
+
+cart.splice(index,1);
+updateCart();
+
+}
+
+function updateCart(){
+
+document.getElementById("cartCount").textContent=cart.length;
+
+const box=document.getElementById("cartItems");
+
+if(cart.length===0){
+
+box.innerHTML="Your cart is empty.";
+document.getElementById("cartTotal").textContent="0";
+
+return;
+}
+
+let total=0;
+
+box.innerHTML="";
+
+cart.forEach((item,index)=>{
+
+total+=item.price;
+
+const div=document.createElement("div");
+
+div.className="cart-item";
+
+div.innerHTML=`
+
+<div>
+<strong>${item.name}</strong>
+<br>
+<small>KSh ${item.price.toLocaleString()}</small>
+</div>
+
+<button class="remove"
+onclick="removeItem(${index})">
+REMOVE
+</button>
+
+`;
+
+box.appendChild(div);
+
+});
+
+document.getElementById("cartTotal")
+.textContent=total.toLocaleString();
+
+let message=
+"Hello Shiquo Hii Style!%0A%0A";
+
+message+="My order:%0A%0A";
+
+cart.forEach(item=>{
+
+message+="• "+
+item.name+
+" — KSh "+
+item.price.toLocaleString()+
+"%0A";
+
+});
+
+message+="%0ATotal: KSh "+
+total.toLocaleString();
+
+document.getElementById("whatsappOrder").href=
+"https://wa.me/"+
+WHATSAPP_NUMBER+
+"?text="+message;
+
+}
+
+function openCart(){
+
+document.getElementById("cartOverlay")
+.style.display="block";
+
+}
+
+function closeCart(){
+
+document.getElementById("cartOverlay")
+.style.display="none";
+
+}
+
+function searchProducts(){
+
+const query=
+document.getElementById("searchInput")
+.value
+.toLowerCase()
+.trim();
+
+const products=
+document.querySelectorAll(".product");
+
+products.forEach(product=>{
+
+const name=
+product.dataset.name.toLowerCase();
+
+product.style.display=
+name.includes(query)
+?"block"
+:"none";
+
+});
+
+document.getElementById("products")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+document.getElementById("searchInput")
+.addEventListener(
+"keyup",
+function(e){
+
+if(e.key==="Enter"){
+searchProducts();
+}
+
+});
+
+</script>
+
+</body>
+</html>
