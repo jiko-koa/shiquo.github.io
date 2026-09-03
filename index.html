@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shiquo Hii Style | Kenya Online Shop</title>
+<title>Shiquo Hii Style | Kenya</title>
 
-<meta name="description" content="Shiquo Hii Style — Kenyan online shop for fashion, shoes, electronics, home, beauty and lifestyle products.">
-<meta name="theme-color" content="#075c42">
+<meta name="description" content="Shiquo Hii Style Kenya — fashion, shoes, electronics, home, beauty and lifestyle products.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
---green:#075c42;
---green2:#087451;
---green3:#033c2b;
---burgundy:#74152d;
---burgundy2:#9b2341;
---gold:#d6a94b;
---gold2:#f4d47d;
---cream:#fff1d0;
---dark:#071b15;
---card:#0d4635;
---text:#fff8ea;
---muted:#d4c7b5;
---line:rgba(244,212,125,.22);
+--green:#006b49;
+--green2:#00a66a;
+--deepgreen:#002d21;
+
+--burgundy:#7b1231;
+--burgundy2:#b5234b;
+
+--gold:#d7a83f;
+--gold2:#ffe08a;
+
+--black:#020b08;
+--cream:#fff1c9;
+
+--line:rgba(255,224,138,.22);
 }
 
 *{
@@ -43,25 +45,95 @@ scroll-behavior:smooth;
 
 body{
 font-family:'DM Sans',sans-serif;
-color:var(--text);
+color:#fff;
 background:
-radial-gradient(circle at 10% 5%,rgba(155,35,65,.4),transparent 25%),
-radial-gradient(circle at 90% 15%,rgba(214,169,75,.13),transparent 25%),
-linear-gradient(135deg,#03291e,#075c42 45%,#053728 75%,#031c15);
+radial-gradient(circle at 10% 20%,rgba(181,35,75,.30),transparent 25%),
+radial-gradient(circle at 90% 10%,rgba(0,166,106,.25),transparent 28%),
+radial-gradient(circle at 50% 100%,rgba(215,168,63,.13),transparent 30%),
+linear-gradient(135deg,#020b08,#003b2a,#06170f,#3b0718,#002c20);
+
+background-size:
+100% 100%,
+100% 100%,
+100% 100%,
+500% 500%;
+
+animation:
+backgroundMove 18s ease infinite;
+
 min-height:100vh;
+overflow-x:hidden;
+}
+
+@keyframes backgroundMove{
+
+0%{
+background-position:
+0% 0%,
+100% 0%,
+50% 100%,
+0% 50%;
+}
+
+50%{
+background-position:
+100% 50%,
+0% 100%,
+80% 0%,
+100% 50%;
+}
+
+100%{
+background-position:
+0% 0%,
+100% 0%,
+50% 100%,
+0% 50%;
+}
+
+}
+
+/* FLOATING LIGHTS */
+
+body:before,
+body:after{
+content:"";
+position:fixed;
+width:280px;
+height:280px;
+border-radius:50%;
+filter:blur(90px);
+opacity:.22;
+pointer-events:none;
+z-index:-1;
 }
 
 body:before{
-content:"";
-position:fixed;
-inset:0;
-pointer-events:none;
-opacity:.25;
-background:
-linear-gradient(45deg,transparent 48%,rgba(244,212,125,.025) 49%,transparent 51%),
-linear-gradient(-45deg,transparent 48%,rgba(244,212,125,.02) 49%,transparent 51%);
-background-size:70px 70px;
-z-index:-1;
+background:#00a66a;
+top:15%;
+left:-100px;
+animation:floatOne 9s ease-in-out infinite;
+}
+
+body:after{
+background:#b5234b;
+right:-100px;
+bottom:10%;
+animation:floatTwo 11s ease-in-out infinite;
+}
+
+@keyframes floatOne{
+
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(100px) translateX(80px)}
+
+}
+
+@keyframes floatTwo{
+
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-100px) translateX(-80px)}
+
 }
 
 a{
@@ -74,21 +146,39 @@ font-family:inherit;
 cursor:pointer;
 }
 
-/* TOP BAR */
+/* TOP */
 
 .topbar{
-background:linear-gradient(90deg,
-#651127,
-#8e1d39,
-#c3943f,
-#087451,
-#075c42);
-padding:9px 12px;
-text-align:center;
-font-size:10px;
-font-weight:800;
-letter-spacing:1px;
-color:#fff3d2;
+height:32px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(
+90deg,
+#050505,
+#7b1231,
+#d7a83f,
+#006b49,
+#050505
+);
+
+background-size:300% 100%;
+
+animation:barMove 7s linear infinite;
+
+font-size:9px;
+font-weight:900;
+letter-spacing:1.5px;
+}
+
+@keyframes barMove{
+
+0%{background-position:0%}
+100%{background-position:300%}
+
 }
 
 /* HEADER */
@@ -97,697 +187,967 @@ header{
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(3,43,31,.95);
-backdrop-filter:blur(18px);
+
+background:rgba(1,25,18,.82);
+backdrop-filter:blur(22px);
+
 border-bottom:1px solid var(--line);
 }
 
 .nav{
-max-width:1400px;
+max-width:1450px;
 margin:auto;
-padding:14px 18px;
+
+padding:13px 18px;
+
 display:flex;
 align-items:center;
 gap:20px;
 }
 
+/* ANIMATED BRAND */
+
 .logo{
-font-family:'Playfair Display',serif;
-font-size:25px;
-font-weight:800;
+font-family:'Anton',sans-serif;
+
+font-size:27px;
+letter-spacing:1px;
+
 white-space:nowrap;
+
+background:
+linear-gradient(
+90deg,
+#fff1a8,
+#d7a83f,
+#fff7cc,
+#00c982,
+#d7a83f,
+#fff1a8
+);
+
+background-size:400% auto;
+
+-webkit-background-clip:text;
+background-clip:text;
+
+color:transparent;
+
+animation:
+logoShine 5s linear infinite;
+
+filter:
+drop-shadow(0 0 8px rgba(215,168,63,.18));
 }
 
-.logo span{
-color:var(--gold2);
+@keyframes logoShine{
+
+0%{background-position:0%}
+100%{background-position:400%}
+
 }
 
 .logo small{
 display:block;
+
 font-family:'DM Sans',sans-serif;
-font-size:7px;
-letter-spacing:3px;
-color:#c9bfae;
-margin-top:2px;
+
+font-size:6px;
+letter-spacing:4px;
+
+color:#c5d2cc;
+
+margin-top:1px;
 }
 
 /* SEARCH */
 
 .search{
-height:45px;
+height:46px;
 flex:1;
+
 display:flex;
-background:rgba(255,255,255,.07);
-border:1px solid var(--line);
+
 border-radius:30px;
 overflow:hidden;
+
+background:rgba(255,255,255,.055);
+
+border:1px solid var(--line);
 }
 
 .search input{
 flex:1;
+
 border:0;
 outline:0;
+
 background:transparent;
-color:white;
+
+color:#fff;
+
 padding:0 18px;
+font-size:13px;
 }
 
 .search input::placeholder{
-color:#b7c8c0;
+color:#9eb0a9;
 }
 
 .search button{
 width:55px;
+
 border:0;
-background:linear-gradient(135deg,var(--gold),var(--gold2));
-color:#3b2510;
-font-size:20px;
+
+background:
+linear-gradient(
+135deg,
+var(--gold),
+var(--gold2)
+);
+
+color:#291b08;
+
+font-size:21px;
 font-weight:900;
 }
 
-/* NAV ACTIONS */
-
-.nav-actions{
-display:flex;
-align-items:center;
-gap:9px;
-}
-
-.nav-btn{
-border:0;
-background:transparent;
-color:#f5e5c5;
-font-weight:800;
-}
+/* CART */
 
 .cart-btn{
-border:0;
+
+border:1px solid rgba(255,224,138,.35);
+
 padding:11px 16px;
+
 border-radius:30px;
-background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
-color:white;
+
+background:
+linear-gradient(
+135deg,
+var(--burgundy2),
+var(--burgundy)
+);
+
+color:#fff;
+
 font-weight:900;
-border:1px solid rgba(244,212,125,.3);
+
+box-shadow:
+0 7px 25px rgba(0,0,0,.25);
 }
 
 .cart-count{
+
 display:inline-flex;
-width:20px;
-height:20px;
+
+width:21px;
+height:21px;
+
 align-items:center;
 justify-content:center;
+
 border-radius:50%;
-background:var(--gold);
-color:#351b0b;
+
+background:var(--gold2);
+
+color:#3a2109;
+
 font-size:10px;
+
 margin-left:4px;
 }
 
 /* HERO */
 
 .hero{
+
+min-height:680px;
+
 position:relative;
-min-height:620px;
+
 display:flex;
 align-items:center;
+
 overflow:hidden;
 
-/* Replace hero.jpg with your actual GitHub hero image */
 background:
-linear-gradient(90deg,
-rgba(2,32,23,.96) 5%,
-rgba(4,62,43,.75) 48%,
-rgba(5,54,38,.2)),
+linear-gradient(
+90deg,
+rgba(0,20,14,.96),
+rgba(0,55,39,.75),
+rgba(0,20,14,.18)
+),
+
 url("hero.jpg");
 
 background-size:cover;
 background-position:center;
 }
 
-.hero:after{
+.hero:before{
+
 content:"";
+
 position:absolute;
-inset:0;
+inset:-20%;
+
 background:
-linear-gradient(135deg,
-rgba(116,21,45,.28),
-transparent 45%,
-rgba(214,169,75,.12));
+radial-gradient(
+circle,
+rgba(215,168,63,.18),
+transparent 28%
+);
+
+animation:
+heroGlow 8s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+transform:scale(1);
+opacity:.5;
+}
+
+50%{
+transform:scale(1.3);
+opacity:1;
+}
+
 }
 
 .hero-content{
+
 position:relative;
 z-index:2;
-max-width:1400px;
+
+max-width:1450px;
 width:100%;
+
 margin:auto;
-padding:85px 20px;
+
+padding:90px 20px;
 }
 
-.kenya-tag{
-display:inline-block;
+.kenya{
+
+display:inline-flex;
+
+align-items:center;
+
 padding:8px 15px;
+
 border-radius:30px;
-background:rgba(214,169,75,.14);
-border:1px solid rgba(244,212,125,.4);
+
+background:
+rgba(215,168,63,.12);
+
+border:
+1px solid rgba(255,224,138,.35);
+
 color:var(--gold2);
+
 font-size:10px;
+
 font-weight:900;
-letter-spacing:1.5px;
+
+letter-spacing:1.4px;
 }
 
 .hero h1{
-font-family:'Playfair Display',serif;
-font-size:clamp(48px,7vw,88px);
-line-height:.94;
-margin:22px 0;
-max-width:800px;
-letter-spacing:-2px;
+
+font-family:'Anton',sans-serif;
+
+font-size:
+clamp(65px,10vw,135px);
+
+line-height:.86;
+
+letter-spacing:1px;
+
+margin:24px 0;
+
+max-width:1000px;
+
+text-transform:uppercase;
 }
 
 .hero h1 span{
-background:linear-gradient(90deg,#f4d47d,#fff0bd,#cda044);
+
+background:
+linear-gradient(
+90deg,
+#fff0a0,
+#d7a83f,
+#fff7cc,
+#00c982
+);
+
+background-size:300% auto;
+
 -webkit-background-clip:text;
+
 color:transparent;
+
+animation:logoShine 5s linear infinite;
 }
 
 .hero p{
-max-width:600px;
-font-size:15px;
+
+max-width:570px;
+
+font-size:14px;
+
 line-height:1.7;
-color:#e3ddd0;
-margin-bottom:26px;
+
+color:#d7e0dc;
+
+margin-bottom:28px;
 }
 
 .hero-buttons{
+
 display:flex;
-gap:10px;
+
+gap:11px;
+
 flex-wrap:wrap;
 }
 
-.btn-primary{
-display:inline-block;
+.shop-btn{
+
+padding:15px 28px;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+135deg,
+var(--gold),
+var(--gold2)
+);
+
+color:#382308;
+
+font-weight:900;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.3);
+}
+
+.mpesa-btn{
+
 padding:14px 25px;
-border-radius:30px;
-background:linear-gradient(135deg,var(--gold),var(--gold2));
-color:#3e260d;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+135deg,
+#087f51,
+#00aa6b
+);
+
+border:1px solid rgba(255,255,255,.16);
+
 font-weight:900;
-box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-.btn-green{
-display:inline-block;
-padding:13px 23px;
-border-radius:30px;
-background:linear-gradient(135deg,var(--green2),var(--green));
-border:1px solid rgba(244,212,125,.3);
-font-weight:900;
-}
-
-.hero-stats{
-display:flex;
-gap:30px;
-margin-top:38px;
-flex-wrap:wrap;
-}
-
-.stat strong{
-display:block;
-font-family:'Playfair Display',serif;
-font-size:24px;
-color:var(--gold2);
-}
-
-.stat span{
-font-size:9px;
-letter-spacing:1px;
-color:#c6c0b5;
-}
-
-/* SECTIONS */
+/* SECTION */
 
 .section{
-max-width:1400px;
+
+max-width:1450px;
+
 margin:auto;
+
 padding:65px 20px;
 }
 
 .heading{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:end;
+
 margin-bottom:25px;
 }
 
 .heading h2{
-font-family:'Playfair Display',serif;
+
+font-family:'Anton',sans-serif;
+
 font-size:38px;
+
+letter-spacing:.5px;
 }
 
 .heading p{
+
 font-size:11px;
-color:var(--muted);
-margin-top:5px;
+
+color:#aebeb7;
 }
 
 /* CATEGORIES */
 
 .categories{
+
 display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:13px;
+
+grid-template-columns:
+repeat(5,1fr);
+
+gap:12px;
 }
 
 .category{
-height:205px;
+
+height:210px;
+
 position:relative;
+
 overflow:hidden;
-border-radius:17px;
-background:var(--card);
+
+border-radius:18px;
+
 border:1px solid var(--line);
+
+background:#053e2d;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.22);
 }
 
 .category img{
+
 width:100%;
 height:100%;
+
 object-fit:cover;
-transition:.5s;
+
+transition:.6s;
 }
 
 .category:after{
+
 content:"";
+
 position:absolute;
 inset:0;
-background:linear-gradient(transparent 25%,rgba(0,24,17,.9));
+
+background:
+linear-gradient(
+transparent 20%,
+rgba(0,15,10,.9)
+);
 }
 
 .category:hover img{
-transform:scale(1.08);
+
+transform:scale(1.1);
 }
 
 .category-info{
+
 position:absolute;
-z-index:2;
+
 left:15px;
 bottom:14px;
+
+z-index:2;
 }
 
 .category-info h3{
-font-size:16px;
+
+font-size:17px;
+
+font-weight:900;
 }
 
 .category-info p{
+
 font-size:9px;
-color:#ddd3c2;
+
+color:#cbd5cf;
+
+margin-top:2px;
 }
 
 /* PRODUCTS */
 
 .products{
+
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:17px;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:15px;
 }
 
 .product{
+
 overflow:hidden;
-border-radius:19px;
+
+border-radius:18px;
+
 background:
-linear-gradient(145deg,
-rgba(13,81,60,.95),
-rgba(5,53,39,.98));
+linear-gradient(
+145deg,
+rgba(5,76,55,.92),
+rgba(3,39,29,.97)
+);
+
 border:1px solid var(--line);
-box-shadow:0 15px 40px rgba(0,0,0,.2);
-transition:.3s;
+
+box-shadow:
+0 14px 38px rgba(0,0,0,.24);
+
+transition:.35s;
 }
 
 .product:hover{
-transform:translateY(-5px);
-border-color:rgba(244,212,125,.5);
+
+transform:
+translateY(-7px);
+
+border-color:
+rgba(255,224,138,.55);
 }
 
 .product-image{
-height:250px;
+
+height:255px;
+
 position:relative;
+
 overflow:hidden;
-background:#063c2c;
+
+background:#063d2d;
 }
 
 .product-image img{
+
 width:100%;
 height:100%;
+
 object-fit:cover;
-transition:.5s;
+
+transition:.55s;
 }
 
-.product:hover .product-image img{
-transform:scale(1.06);
+.product:hover img{
+
+transform:scale(1.07);
 }
 
 .badge{
+
 position:absolute;
+
 top:12px;
 left:12px;
+
 padding:6px 10px;
+
 border-radius:20px;
-background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
-color:white;
+
+background:
+linear-gradient(
+135deg,
+var(--burgundy2),
+var(--burgundy)
+);
+
+color:#fff;
+
 font-size:8px;
+
 font-weight:900;
 }
 
 .product-info{
+
 padding:15px;
 }
 
 .category-name{
+
 font-size:8px;
-text-transform:uppercase;
+
 letter-spacing:1.2px;
+
+text-transform:uppercase;
+
 color:var(--gold2);
+
 font-weight:900;
 }
 
 .product h3{
-font-size:15px;
+
+font-size:14px;
+
 margin:6px 0;
 }
 
 .product-desc{
+
 font-size:10px;
-color:#c8c5ba;
+
+color:#aebdb6;
+
 margin-bottom:10px;
 }
 
 .price{
-font-size:18px;
+
+font-size:19px;
+
 font-weight:900;
-color:#ffe5a4;
+
+color:#ffe4a0;
 }
 
 .add{
+
 width:100%;
+
 padding:11px;
+
 margin-top:12px;
+
 border-radius:10px;
-background:linear-gradient(135deg,var(--burgundy2),var(--burgundy));
-border:1px solid rgba(244,212,125,.3);
+
+border:1px solid rgba(255,224,138,.25);
+
+background:
+linear-gradient(
+135deg,
+rgba(123,18,49,.95),
+rgba(181,35,75,.85)
+);
+
 color:white;
+
 font-weight:900;
 }
 
-/* MPESA */
+/* PAYMENT */
 
-.mpesa{
-max-width:1350px;
-margin:10px auto 65px;
-padding:45px 25px;
+.payment{
+
+max-width:900px;
+
+margin:20px auto 65px;
+
+padding:35px 22px;
+
 border-radius:25px;
+
 background:
-linear-gradient(110deg,
-rgba(0,91,63,.98),
-rgba(6,67,49,.95));
-border:1px solid rgba(244,212,125,.3);
+linear-gradient(
+145deg,
+rgba(0,91,63,.96),
+rgba(2,39,28,.98)
+);
+
+border:
+1px solid rgba(255,224,138,.3);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.28);
+
 text-align:center;
 }
 
-.mpesa h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
+.payment h2{
+
+font-family:'Anton',sans-serif;
+
+font-size:39px;
+
 color:var(--gold2);
+
+letter-spacing:.5px;
 }
 
-.mpesa-number{
-font-size:27px;
+.payment p{
+
+font-size:11px;
+
+color:#c8d5cf;
+
+margin:8px auto 22px;
+
+max-width:600px;
+}
+
+.payment-box{
+
+max-width:520px;
+
+margin:auto;
+
+display:flex;
+
+gap:8px;
+}
+
+.payment-box input{
+
+flex:1;
+
+height:50px;
+
+border-radius:10px;
+
+border:1px solid var(--line);
+
+background:rgba(255,255,255,.06);
+
+outline:0;
+
+color:#fff;
+
+padding:0 15px;
+
+font-size:14px;
+}
+
+.pay-now{
+
+border:0;
+
+padding:0 20px;
+
+border-radius:10px;
+
+background:
+linear-gradient(
+135deg,
+var(--gold),
+var(--gold2)
+);
+
+color:#351f08;
+
 font-weight:900;
-margin:14px 0;
 }
 
-.mpesa p{
-font-size:12px;
-color:#d7ddd6;
-margin-bottom:18px;
-}
+.payment-note{
 
-.mpesa-btn{
-display:inline-block;
-padding:13px 25px;
-border-radius:30px;
-background:var(--gold);
-color:#35200c;
-font-weight:900;
+font-size:9px!important;
+
+color:#82988f!important;
+
+margin-top:12px!important;
 }
 
 /* PROMO */
 
 .promo{
+
+max-width:1400px;
+
 margin:0 auto 65px;
-max-width:1350px;
-min-height:300px;
-padding:55px 35px;
-display:flex;
-flex-direction:column;
-justify-content:center;
+
+min-height:310px;
+
+padding:50px 30px;
+
 border-radius:25px;
-overflow:hidden;
-position:relative;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
 background:
-linear-gradient(90deg,
-rgba(100,13,38,.95),
-rgba(112,19,45,.65)),
+linear-gradient(
+90deg,
+rgba(100,12,40,.95),
+rgba(103,17,43,.60)
+),
+
 url("promo.jpg");
+
 background-size:cover;
+
 background-position:center;
+
 border:1px solid var(--line);
 }
 
 .promo h2{
-font-family:'Playfair Display',serif;
-font-size:42px;
+
+font-family:'Anton',sans-serif;
+
+font-size:48px;
 }
 
 .promo p{
-max-width:600px;
-font-size:13px;
-line-height:1.7;
-color:#eee2d2;
-margin:10px 0 20px;
-}
 
-/* FEATURES */
+max-width:550px;
 
-.features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px;
-}
-
-.feature{
-padding:23px;
-border-radius:17px;
-background:linear-gradient(145deg,rgba(115,21,45,.7),rgba(7,67,49,.9));
-border:1px solid var(--line);
-}
-
-.feature-icon{
-font-size:25px;
-margin-bottom:10px;
-}
-
-.feature h3{
-font-size:14px;
-margin-bottom:6px;
-}
-
-.feature p{
-font-size:10px;
-line-height:1.7;
-color:#cfcac0;
-}
-
-/* ABOUT */
-
-.about{
-background:
-radial-gradient(circle at 10% 30%,rgba(155,35,65,.3),transparent 30%),
-#043c2b;
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-}
-
-.about-inner{
-max-width:1400px;
-margin:auto;
-padding:70px 20px;
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:60px;
-}
-
-.about h2{
-font-family:'Playfair Display',serif;
-font-size:43px;
-margin-bottom:16px;
-}
-
-.about p{
 font-size:12px;
-line-height:1.8;
-color:#d6d7cd;
-}
 
-.about-card{
-padding:28px;
-border-radius:20px;
-background:rgba(214,169,75,.08);
-border:1px solid var(--line);
-}
+color:#eadfd4;
 
-.brand{
-font-family:'Playfair Display',serif;
-font-size:26px;
-color:var(--gold2);
-}
-
-.about-card hr{
-border:0;
-border-top:1px solid var(--line);
-margin:18px 0;
-}
-
-/* FOOTER */
-
-footer{
-background:#021c14;
-border-top:1px solid var(--line);
-}
-
-.footer-inner{
-max-width:1400px;
-margin:auto;
-padding:50px 20px 25px;
-display:grid;
-grid-template-columns:2fr 1fr 1fr 1fr;
-gap:35px;
-}
-
-.footer-logo{
-font-family:'Playfair Display',serif;
-font-size:25px;
-}
-
-.footer-logo span{
-color:var(--gold2);
-}
-
-.footer h3{
-font-size:13px;
-color:var(--gold2);
-margin-bottom:12px;
-}
-
-.footer p,
-.footer a{
-font-size:10px;
-line-height:1.8;
-color:#aaaFA8;
-display:block;
-margin:7px 0;
-}
-
-.footer a:hover{
-color:var(--gold2);
-}
-
-.copyright{
-text-align:center;
-padding:18px;
-font-size:9px;
-color:#819087;
-border-top:1px solid rgba(255,255,255,.05);
+margin:10px 0 22px;
 }
 
 /* CART */
 
 .cart-overlay{
+
 display:none;
+
 position:fixed;
+
 inset:0;
-background:rgba(0,0,0,.75);
+
+background:rgba(0,0,0,.78);
+
 z-index:3000;
 }
 
 .cart{
+
 position:absolute;
+
 right:0;
 top:0;
-height:100%;
+
 width:min(430px,100%);
+
+height:100%;
+
 padding:22px;
+
 display:flex;
+
 flex-direction:column;
-background:linear-gradient(145deg,#07563f,#033323);
+
+background:
+linear-gradient(
+145deg,
+#07583f,
+#021f16
+);
+
 border-left:1px solid var(--line);
 }
 
 .cart-head{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
+
 padding-bottom:15px;
+
 border-bottom:1px solid var(--line);
 }
 
 .cart-head h2{
-font-family:'Playfair Display',serif;
-}
 
-.close{
-background:transparent;
-border:0;
-color:#ffe6b6;
+font-family:'Anton',sans-serif;
+
 font-size:28px;
 }
 
+.close{
+
+background:transparent;
+
+border:0;
+
+color:#ffe8b0;
+
+font-size:30px;
+}
+
 .cart-items{
+
 flex:1;
+
 overflow:auto;
-padding:15px 0;
+
+padding:14px 0;
 }
 
 .cart-item{
+
 display:flex;
+
 justify-content:space-between;
+
 gap:10px;
+
 padding:14px 0;
+
 border-bottom:1px solid var(--line);
 }
 
 .cart-item small{
-color:#c7c7bd;
+
+color:#b9c8c2;
 }
 
 .remove{
-border:0;
+
 background:transparent;
-color:#ffb6c2;
-font-size:9px;
+
+border:0;
+
+color:#ff9eb1;
+
+font-size:8px;
+
 font-weight:900;
 }
 
 .cart-total{
-padding-top:15px;
-border-top:1px solid var(--line);
-font-size:20px;
+
+font-size:21px;
+
 font-weight:900;
-color:#ffe0a0;
+
+color:#ffe09a;
+
+padding-top:15px;
+
+border-top:1px solid var(--line);
 }
 
 .whatsapp{
+
 display:block;
+
 text-align:center;
+
 padding:14px;
-margin-top:12px;
+
+margin-top:11px;
+
 border-radius:12px;
-background:linear-gradient(135deg,#0c9b50,#18c968);
-color:white;
+
+background:
+linear-gradient(
+135deg,
+#0c9d50,
+#18c968
+);
+
 font-weight:900;
 }
 
@@ -804,10 +1164,6 @@ order:3;
 flex-basis:100%;
 }
 
-.nav-btn{
-display:none;
-}
-
 .categories{
 grid-template-columns:repeat(2,1fr);
 }
@@ -815,36 +1171,24 @@ grid-template-columns:repeat(2,1fr);
 .products{
 grid-template-columns:repeat(2,1fr);
 }
-
-.features{
-grid-template-columns:repeat(2,1fr);
-}
-
-.about-inner{
-grid-template-columns:1fr;
-}
-
-.footer-inner{
-grid-template-columns:1fr 1fr;
-}
 }
 
 @media(max-width:550px){
 
 .topbar{
-font-size:8px;
+font-size:7px;
 }
 
 .nav{
-padding:12px 13px;
+padding:11px 12px;
 }
 
 .logo{
-font-size:20px;
+font-size:21px;
 }
 
 .hero{
-min-height:600px;
+min-height:610px;
 }
 
 .hero-content{
@@ -852,7 +1196,7 @@ padding:65px 17px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:62px;
 }
 
 .hero p{
@@ -860,11 +1204,11 @@ font-size:12px;
 }
 
 .section{
-padding:50px 14px;
+padding:50px 13px;
 }
 
 .heading h2{
-font-size:29px;
+font-size:30px;
 }
 
 .categories{
@@ -877,7 +1221,7 @@ height:155px;
 
 .category-info{
 left:11px;
-bottom:11px;
+bottom:10px;
 }
 
 .category-info h3{
@@ -885,11 +1229,11 @@ font-size:13px;
 }
 
 .products{
-gap:9px;
+gap:8px;
 }
 
 .product-image{
-height:180px;
+height:185px;
 }
 
 .product-info{
@@ -900,47 +1244,41 @@ padding:11px;
 font-size:12px;
 }
 
+.product-desc{
+font-size:9px;
+}
+
 .price{
 font-size:15px;
 }
 
-.mpesa{
-margin:0 14px 50px;
-padding:35px 18px;
+.payment{
+margin:0 13px 50px;
+padding:32px 15px;
 }
 
-.mpesa h2{
-font-size:30px;
+.payment h2{
+font-size:31px;
 }
 
-.mpesa-number{
-font-size:22px;
+.payment-box{
+flex-direction:column;
+}
+
+.payment-box input,
+.pay-now{
+height:48px;
 }
 
 .promo{
-margin:0 14px 50px;
+margin:0 13px 50px;
 padding:35px 20px;
 }
 
 .promo h2{
-font-size:31px;
+font-size:38px;
 }
 
-.features{
-grid-template-columns:1fr;
-}
-
-.about-inner{
-padding:55px 17px;
-}
-
-.about h2{
-font-size:34px;
-}
-
-.footer-inner{
-grid-template-columns:1fr;
-}
 }
 
 @media(max-width:380px){
@@ -958,41 +1296,53 @@ grid-template-columns:1fr;
 }
 
 .product-image{
-height:240px;
+height:250px;
 }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="topbar">
-🇰🇪 MADE FOR KENYA &nbsp; • &nbsp; NAIROBI &nbsp; • &nbsp; DELIVERY AVAILABLE
+🇰🇪 KENYA • M-PESA • DELIVERY • SHOP FROM YOUR PHONE
 </div>
 
 <header>
+
 <nav class="nav">
 
 <a href="#" class="logo">
-SHIQUO <span>HII STYLE</span>
+SHIQUO HII STYLE
 <small>KENYAN ONLINE SHOP</small>
 </a>
 
 <div class="search">
-<input id="searchInput" type="text" placeholder="Search products...">
-<button onclick="searchProducts()">⌕</button>
-</div>
 
-<div class="nav-actions">
-<button class="nav-btn" onclick="location.href='#categories'">Categories</button>
+<input
+id="searchInput"
+placeholder="Search anything...">
+
+<button onclick="searchProducts()">⌕</button>
+
+</div>
 
 <button class="cart-btn" onclick="openCart()">
-🛒 Cart
-<span class="cart-count" id="cartCount">0</span>
+
+🛒 CART
+
+<span
+id="cartCount"
+class="cart-count">
+0
+</span>
+
 </button>
-</div>
 
 </nav>
+
 </header>
 
 <!-- HERO -->
@@ -1001,54 +1351,36 @@ SHIQUO <span>HII STYLE</span>
 
 <div class="hero-content">
 
-<span class="kenya-tag">
+<div class="kenya">
 🇰🇪 SHIQUO HII STYLE • KENYA
-</span>
+</div>
 
 <h1>
-Shop.
+SHOP
 <br>
-Live.
+YOUR
 <br>
-<span>In Style.</span>
+<span>STYLE.</span>
 </h1>
 
 <p>
-Fashion, shoes, electronics, home, beauty and everyday essentials — all in one Kenyan online shop.
+Fashion, shoes, electronics, home, beauty and lifestyle products — all in one place.
 </p>
 
 <div class="hero-buttons">
 
-<a href="#products" class="btn-primary">
+<a href="#products" class="shop-btn">
 SHOP NOW →
 </a>
 
-<a href="#categories" class="btn-green">
-EXPLORE CATEGORIES
+<a href="#payment" class="mpesa-btn">
+💳 PAY WITH M-PESA
 </a>
 
 </div>
 
-<div class="hero-stats">
-
-<div class="stat">
-<strong>🇰🇪</strong>
-<span>KENYA</span>
 </div>
 
-<div class="stat">
-<strong>24/7</strong>
-<span>ONLINE</span>
-</div>
-
-<div class="stat">
-<strong>KSh</strong>
-<span>LOCAL PRICES</span>
-</div>
-
-</div>
-
-</div>
 </section>
 
 <!-- CATEGORIES -->
@@ -1056,8 +1388,15 @@ EXPLORE CATEGORIES
 <section class="section" id="categories">
 
 <div class="heading">
-<h2>Shop Categories</h2>
-<p>Everything you need, in one place.</p>
+
+<div>
+
+<h2>CATEGORIES</h2>
+
+<p>Pick your style.</p>
+
+</div>
+
 </div>
 
 <div class="categories">
@@ -1066,7 +1405,7 @@ EXPLORE CATEGORIES
 <img src="category-fashion.jpg" alt="Fashion">
 <div class="category-info">
 <h3>Fashion</h3>
-<p>Modern Kenyan style</p>
+<p>Style & clothing</p>
 </div>
 </a>
 
@@ -1074,7 +1413,7 @@ EXPLORE CATEGORIES
 <img src="category-shoes.jpg" alt="Shoes">
 <div class="category-info">
 <h3>Shoes</h3>
-<p>Step out in style</p>
+<p>Step out better</p>
 </div>
 </a>
 
@@ -1098,7 +1437,7 @@ EXPLORE CATEGORIES
 <img src="category-furniture.jpg" alt="Furniture">
 <div class="category-info">
 <h3>Furniture</h3>
-<p>Beautiful living</p>
+<p>Modern living</p>
 </div>
 </a>
 
@@ -1122,7 +1461,7 @@ EXPLORE CATEGORIES
 <img src="category-accessories.jpg" alt="Accessories">
 <div class="category-info">
 <h3>Accessories</h3>
-<p>Complete your look</p>
+<p>Finish the look</p>
 </div>
 </a>
 
@@ -1130,11 +1469,12 @@ EXPLORE CATEGORIES
 <img src="category-fitness.jpg" alt="Fitness">
 <div class="category-info">
 <h3>Fitness</h3>
-<p>Move & perform</p>
+<p>Move better</p>
 </div>
 </a>
 
 </div>
+
 </section>
 
 <!-- PRODUCTS -->
@@ -1142,13 +1482,18 @@ EXPLORE CATEGORIES
 <section class="section" id="products">
 
 <div class="heading">
-<h2>Featured Picks</h2>
-<p>Popular products at Shiquo Hii Style.</p>
+
+<div>
+
+<h2>HOT PICKS</h2>
+
+<p>Shop today's favourites.</p>
+
+</div>
+
 </div>
 
 <div class="products">
-
-<!-- PRODUCT 1 -->
 
 <div class="product" data-name="Ladies Fashion">
 
@@ -1158,18 +1503,26 @@ EXPLORE CATEGORIES
 </div>
 
 <div class="product-info">
-<span class="category-name">Fashion</span>
-<h3>Elegant Ladies Style</h3>
-<p class="product-desc">Perfect for everyday wear.</p>
-<div class="price">KSh 2,499</div>
 
-<button class="add" onclick="addToCart('Elegant Ladies Style',2499)">
+<span class="category-name">Fashion</span>
+
+<h3>Elegant Ladies Style</h3>
+
+<p class="product-desc">
+Modern everyday fashion.
+</p>
+
+<div class="price">
+KSh 2,499
+</div>
+
+<button class="add"
+onclick="addToCart('Elegant Ladies Style',2499)">
 ADD TO CART
 </button>
-</div>
-</div>
 
-<!-- PRODUCT 2 -->
+</div>
+</div>
 
 <div class="product" data-name="Premium Shoes">
 
@@ -1179,20 +1532,28 @@ ADD TO CART
 </div>
 
 <div class="product-info">
-<span class="category-name">Shoes</span>
-<h3>Premium Footwear</h3>
-<p class="product-desc">Comfort for every step.</p>
-<div class="price">KSh 4,999</div>
 
-<button class="add" onclick="addToCart('Premium Footwear',4999)">
+<span class="category-name">Shoes</span>
+
+<h3>Premium Footwear</h3>
+
+<p class="product-desc">
+Comfort & style.
+</p>
+
+<div class="price">
+KSh 4,999
+</div>
+
+<button class="add"
+onclick="addToCart('Premium Footwear',4999)">
 ADD TO CART
 </button>
+
 </div>
 </div>
 
-<!-- PRODUCT 3 -->
-
-<div class="product" data-name="Electronics">
+<div class="product" data-name="Smart Electronics">
 
 <div class="product-image">
 <img src="product3.jpg" alt="Electronics">
@@ -1200,40 +1561,56 @@ ADD TO CART
 </div>
 
 <div class="product-info">
-<span class="category-name">Electronics</span>
-<h3>Smart Electronics</h3>
-<p class="product-desc">Useful tech for everyday life.</p>
-<div class="price">KSh 3,499</div>
 
-<button class="add" onclick="addToCart('Smart Electronics',3499)">
+<span class="category-name">Electronics</span>
+
+<h3>Smart Electronics</h3>
+
+<p class="product-desc">
+Everyday technology.
+</p>
+
+<div class="price">
+KSh 3,499
+</div>
+
+<button class="add"
+onclick="addToCart('Smart Electronics',3499)">
 ADD TO CART
 </button>
+
 </div>
 </div>
 
-<!-- PRODUCT 4 -->
-
-<div class="product" data-name="Kitchen">
+<div class="product" data-name="Kitchen Essential">
 
 <div class="product-image">
 <img src="product4.jpg" alt="Kitchen">
 </div>
 
 <div class="product-info">
-<span class="category-name">Kitchen</span>
-<h3>Kitchen Essential</h3>
-<p class="product-desc">Make cooking easier.</p>
-<div class="price">KSh 5,999</div>
 
-<button class="add" onclick="addToCart('Kitchen Essential',5999)">
+<span class="category-name">Kitchen</span>
+
+<h3>Kitchen Essential</h3>
+
+<p class="product-desc">
+Make cooking easier.
+</p>
+
+<div class="price">
+KSh 5,999
+</div>
+
+<button class="add"
+onclick="addToCart('Kitchen Essential',5999)">
 ADD TO CART
 </button>
+
 </div>
 </div>
 
-<!-- PRODUCT 5 -->
-
-<div class="product" data-name="Furniture">
+<div class="product" data-name="Modern Furniture">
 
 <div class="product-image">
 <img src="product5.jpg" alt="Furniture">
@@ -1241,18 +1618,26 @@ ADD TO CART
 </div>
 
 <div class="product-info">
-<span class="category-name">Furniture</span>
-<h3>Modern Furniture</h3>
-<p class="product-desc">Comfortable modern living.</p>
-<div class="price">KSh 28,500</div>
 
-<button class="add" onclick="addToCart('Modern Furniture',28500)">
+<span class="category-name">Furniture</span>
+
+<h3>Modern Furniture</h3>
+
+<p class="product-desc">
+Beautiful living.
+</p>
+
+<div class="price">
+KSh 28,500
+</div>
+
+<button class="add"
+onclick="addToCart('Modern Furniture',28500)">
 ADD TO CART
 </button>
-</div>
-</div>
 
-<!-- PRODUCT 6 -->
+</div>
+</div>
 
 <div class="product" data-name="Accessories">
 
@@ -1261,18 +1646,26 @@ ADD TO CART
 </div>
 
 <div class="product-info">
-<span class="category-name">Accessories</span>
-<h3>Smart Accessories</h3>
-<p class="product-desc">Complete your everyday look.</p>
-<div class="price">KSh 3,999</div>
 
-<button class="add" onclick="addToCart('Smart Accessories',3999)">
+<span class="category-name">Accessories</span>
+
+<h3>Smart Accessories</h3>
+
+<p class="product-desc">
+Complete your look.
+</p>
+
+<div class="price">
+KSh 3,999
+</div>
+
+<button class="add"
+onclick="addToCart('Smart Accessories',3999)">
 ADD TO CART
 </button>
-</div>
-</div>
 
-<!-- PRODUCT 7 -->
+</div>
+</div>
 
 <div class="product" data-name="Beauty">
 
@@ -1281,18 +1674,26 @@ ADD TO CART
 </div>
 
 <div class="product-info">
-<span class="category-name">Beauty</span>
-<h3>Beauty Essentials</h3>
-<p class="product-desc">Everyday beauty care.</p>
-<div class="price">KSh 2,999</div>
 
-<button class="add" onclick="addToCart('Beauty Essentials',2999)">
+<span class="category-name">Beauty</span>
+
+<h3>Beauty Essentials</h3>
+
+<p class="product-desc">
+Everyday beauty.
+</p>
+
+<div class="price">
+KSh 2,999
+</div>
+
+<button class="add"
+onclick="addToCart('Beauty Essentials',2999)">
 ADD TO CART
 </button>
-</div>
-</div>
 
-<!-- PRODUCT 8 -->
+</div>
+</div>
 
 <div class="product" data-name="Fitness">
 
@@ -1301,37 +1702,62 @@ ADD TO CART
 </div>
 
 <div class="product-info">
+
 <span class="category-name">Fitness</span>
+
 <h3>Fitness Essentials</h3>
-<p class="product-desc">Train. Move. Perform.</p>
-<div class="price">KSh 3,500</div>
 
-<button class="add" onclick="addToCart('Fitness Essentials',3500)">
-ADD TO CART
-</button>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- MPESA -->
-
-<section class="mpesa">
-
-<h2>Pay with M-Pesa 🇰🇪</h2>
-
-<div class="mpesa-number">
-07XX XXX XXX
-</div>
-
-<p>
-Add your actual M-Pesa number here. After ordering, send your payment confirmation through WhatsApp.
+<p class="product-desc">
+Train. Move. Perform.
 </p>
 
-<a class="mpesa-btn" href="#products">
-CONTINUE SHOPPING
-</a>
+<div class="price">
+KSh 3,500
+</div>
+
+<button class="add"
+onclick="addToCart('Fitness Essentials',3500)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- M-PESA -->
+
+<section class="payment" id="payment">
+
+<h2>PAY WITH M-PESA</h2>
+
+<p>
+Enter your Safaricom number and we'll send an M-Pesa payment request to your phone.
+</p>
+
+<div class="payment-box">
+
+<input
+id="phone"
+type="tel"
+placeholder="07XXXXXXXX"
+maxlength="10">
+
+<button
+class="pay-now"
+onclick="startPayment()">
+
+PAY NOW
+
+</button>
+
+</div>
+
+<p class="payment-note">
+🔒 Secure M-Pesa payment • Your PIN is entered only on your phone
+</p>
 
 </section>
 
@@ -1339,143 +1765,19 @@ CONTINUE SHOPPING
 
 <section class="promo">
 
-<h2>Kenya, Shop Your Way.</h2>
+<h2>
+KENYA, SHOP DIFFERENT.
+</h2>
 
 <p>
-Great products, easy ordering and convenient delivery — all from your phone.
+From everyday essentials to statement pieces — Shiquo Hii Style brings your shopping together.
 </p>
 
-<a href="#products" class="btn-primary">
-SHOP NOW →
+<a href="#products" class="shop-btn">
+EXPLORE SHOP →
 </a>
 
 </section>
-
-<!-- FEATURES -->
-
-<section class="section">
-
-<div class="heading">
-<h2>Why Shiquo?</h2>
-</div>
-
-<div class="features">
-
-<div class="feature">
-<div class="feature-icon">🇰🇪</div>
-<h3>Made for Kenya</h3>
-<p>Shopping designed around Kenyan customers and prices.</p>
-</div>
-
-<div class="feature">
-<div class="feature-icon">📱</div>
-<h3>Easy Ordering</h3>
-<p>Browse and order directly from your phone.</p>
-</div>
-
-<div class="feature">
-<div class="feature-icon">💳</div>
-<h3>M-Pesa</h3>
-<p>Simple local payment options.</p>
-</div>
-
-<div class="feature">
-<div class="feature-icon">🚚</div>
-<h3>Delivery</h3>
-<p>Delivery options available across Kenya.</p>
-</div>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-
-<section class="about">
-
-<div class="about-inner">
-
-<div>
-<h2>Shiquo Hii Style</h2>
-
-<p>
-A modern Kenyan online shopping destination bringing fashion, shoes, electronics, home, beauty and lifestyle products together.
-</p>
-</div>
-
-<div class="about-card">
-
-<div class="brand">
-SHIQUO HII STYLE
-</div>
-
-<hr>
-
-<p>
-<strong style="color:#f4d47d">
-STYLE • HOME • LIFESTYLE
-</strong>
-</p>
-
-<hr>
-
-<p>
-🇰🇪 Kenya<br><br>
-📦 Delivery Available<br><br>
-📱 Order Online<br><br>
-💳 M-Pesa Accepted
-</p>
-
-</div>
-
-</div>
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="footer-inner">
-
-<div>
-<div class="footer-logo">
-SHIQUO <span>HII STYLE</span>
-</div>
-
-<p>
-Kenyan online shopping.<br>
-Style • Home • Lifestyle
-</p>
-</div>
-
-<div>
-<h3>SHOP</h3>
-<a href="#products">Products</a>
-<a href="#categories">Categories</a>
-<a href="#products">New Arrivals</a>
-</div>
-
-<div>
-<h3>CATEGORIES</h3>
-<a href="#products">Fashion</a>
-<a href="#products">Shoes</a>
-<a href="#products">Electronics</a>
-<a href="#products">Home</a>
-</div>
-
-<div>
-<h3>CONTACT</h3>
-<a href="#">🇰🇪 Kenya</a>
-<a href="https://wa.me/254700000000">💬 WhatsApp</a>
-<a href="#products">🚚 Delivery</a>
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 Shiquo Hii Style • Kenya
-</div>
-
-</footer>
 
 <!-- CART -->
 
@@ -1484,37 +1786,54 @@ Style • Home • Lifestyle
 <div class="cart">
 
 <div class="cart-head">
-<h2>Your Cart</h2>
 
-<button class="close" onclick="closeCart()">
+<h2>YOUR CART</h2>
+
+<button class="close"
+onclick="closeCart()">
 ×
 </button>
+
 </div>
 
 <div class="cart-items" id="cartItems">
+
 Your cart is empty.
+
 </div>
 
 <div class="cart-total">
-Total: KSh <span id="cartTotal">0</span>
+
+TOTAL:
+KSh <span id="cartTotal">0</span>
+
 </div>
 
-<a id="whatsappOrder"
+<a
+id="whatsappOrder"
 class="whatsapp"
 href="#"
 target="_blank">
-ORDER VIA WHATSAPP
+
+💬 ORDER VIA WHATSAPP
+
 </a>
 
 </div>
+
 </div>
 
 <script>
 
 let cart=[];
 
-/* CHANGE THIS TO YOUR REAL WHATSAPP NUMBER */
+/*
+YOUR WHATSAPP NUMBER
+Replace with your real number.
+*/
+
 const WHATSAPP_NUMBER="254700000000";
+
 
 function addToCart(name,price){
 
@@ -1524,28 +1843,38 @@ price:price
 });
 
 updateCart();
+
 openCart();
+
 }
+
 
 function removeItem(index){
 
 cart.splice(index,1);
+
 updateCart();
 
 }
 
+
 function updateCart(){
 
-document.getElementById("cartCount").textContent=cart.length;
+document.getElementById("cartCount")
+.textContent=cart.length;
 
-const box=document.getElementById("cartItems");
+const box=
+document.getElementById("cartItems");
 
 if(cart.length===0){
 
 box.innerHTML="Your cart is empty.";
-document.getElementById("cartTotal").textContent="0";
+
+document.getElementById("cartTotal")
+.textContent="0";
 
 return;
+
 }
 
 let total=0;
@@ -1563,14 +1892,25 @@ div.className="cart-item";
 div.innerHTML=`
 
 <div>
-<strong>${item.name}</strong>
+
+<strong>
+${item.name}
+</strong>
+
 <br>
-<small>KSh ${item.price.toLocaleString()}</small>
+
+<small>
+KSh ${item.price.toLocaleString()}
+</small>
+
 </div>
 
-<button class="remove"
+<button
+class="remove"
 onclick="removeItem(${index})">
+
 REMOVE
+
 </button>
 
 `;
@@ -1580,16 +1920,19 @@ box.appendChild(div);
 });
 
 document.getElementById("cartTotal")
-.textContent=total.toLocaleString();
+.textContent=
+total.toLocaleString();
+
 
 let message=
 "Hello Shiquo Hii Style!%0A%0A";
 
-message+="My order:%0A%0A";
+message+="MY ORDER:%0A%0A";
 
 cart.forEach(item=>{
 
-message+="• "+
+message+=
+"• "+
 item.name+
 " — KSh "+
 item.price.toLocaleString()+
@@ -1597,15 +1940,20 @@ item.price.toLocaleString()+
 
 });
 
-message+="%0ATotal: KSh "+
+message+=
+"%0ATOTAL: KSh "+
 total.toLocaleString();
 
-document.getElementById("whatsappOrder").href=
+
+document.getElementById("whatsappOrder")
+.href=
 "https://wa.me/"+
 WHATSAPP_NUMBER+
-"?text="+message;
+"?text="+
+message;
 
 }
+
 
 function openCart(){
 
@@ -1614,12 +1962,14 @@ document.getElementById("cartOverlay")
 
 }
 
+
 function closeCart(){
 
 document.getElementById("cartOverlay")
 .style.display="none";
 
 }
+
 
 function searchProducts(){
 
@@ -1629,13 +1979,12 @@ document.getElementById("searchInput")
 .toLowerCase()
 .trim();
 
-const products=
-document.querySelectorAll(".product");
-
-products.forEach(product=>{
+document.querySelectorAll(".product")
+.forEach(product=>{
 
 const name=
-product.dataset.name.toLowerCase();
+product.dataset.name
+.toLowerCase();
 
 product.style.display=
 name.includes(query)
@@ -1651,6 +2000,7 @@ behavior:"smooth"
 
 }
 
+
 document.getElementById("searchInput")
 .addEventListener(
 "keyup",
@@ -1661,6 +2011,73 @@ searchProducts();
 }
 
 });
+
+
+/*
+M-PESA CHECKOUT
+
+GitHub Pages cannot safely contain
+Safaricom Daraja credentials.
+
+This function is ready to connect
+to your secure STK Push backend.
+
+Example endpoint:
+
+https://YOUR-BACKEND.com/api/mpesa
+
+*/
+
+async function startPayment(){
+
+const phone=
+document.getElementById("phone")
+.value
+.trim();
+
+if(!/^07\d{8}$/.test(phone)){
+
+alert(
+"Please enter a valid Kenyan Safaricom number, e.g. 0712345678"
+);
+
+return;
+
+}
+
+if(cart.length===0){
+
+alert(
+"Please add products to your cart first."
+);
+
+return;
+
+}
+
+let total=cart.reduce(
+(sum,item)=>sum+item.price,
+0
+);
+
+alert(
+"M-Pesa payment request for KSh "+
+total.toLocaleString()+
+" will be sent to "+
+phone+
+"."
+);
+
+/*
+
+NEXT STEP:
+
+Connect this section to your
+secure M-Pesa STK Push backend.
+
+*/
+
+}
 
 </script>
 
